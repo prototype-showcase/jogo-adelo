@@ -1,0 +1,3404 @@
+{
+    "topics": [
+        {
+            "topicName": "Cantanhede",
+            "displayName": "Cantanhede",
+            "fill": "#ADCE6F",
+            "coordinates": [
+                {
+                    "x": 5795,
+                    "y": 4260
+                }
+            ],
+            "questions": [
+                {
+                    "question": "Que tipo de rocha é predominante na região de Cantanhede?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Granito",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Calcário margoso",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Basalto",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Areia consolidada",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a principal casta de uva cultivada na região de Cantanhede e Mealhada?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Alvarinho",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Touriga Nacional",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Baga",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Tinta Roriz",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que torna os solos da região favoráveis para a agricultura?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "A sua origem vulcânica",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "A composição rica em calcário",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "A sua drenagem rápida",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "A fertilização com produtos modernos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que cor é típica da pedra de Ançã?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Cinzenta",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Branco-amarelada",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Vermelha",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Azulada",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Para que finalidade a pedra de Ançã foi usada durante os Descobrimentos?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Construção de portos marítimos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Produção de esculturas e arquitetura",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Construção de igrejas fortificadas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Decoração de navios",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que tipo de construção usava cal produzida em Ançã?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Casas Gandaresas",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Mosteiros medievais",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pontes romanas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Palácios renascentistas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que o Museu da Pedra em Cantanhede exibe em destaque?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Estátuas modernas de granito",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Obras feitas com pedra de Ançã",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Mapas históricos da região",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Ferramentas agrícolas antigas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em que ano o Museu da Pedra foi inaugurado?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "1987",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "1995",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "2010",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "2001",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a principal função da captação de água dos Olhos da Fervença?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Abastecimento de águas do município de Cantanhede",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Irrigação de vinhas locais",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fornecimento para um parque industrial",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Geração de energia hidroelétrica",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em qual freguesia está localizada a Lagoa dos Teixoeiros?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Tocha",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Quiaios",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Gândaras",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que originou a formação da Lagoa dos Teixoeiros?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Depressões criadas no sistema dunar",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Movimentos tectónicos recentes",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Abertura de minas de calcário",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fluxos de lava de origem vulcânica",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que recursos foram utilizados para estabilizar as dunas antigas do cordão dunar?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Construção de muros de areia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Plantação de pinheiros e arbustos",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Revestimento com redes de contenção",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Barreiras de concreto",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que praia em Cantanhede é conhecida pelos palheiros tradicionais?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Praia de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia da Figueira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia da Tocha",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia de Quiaios",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual a prática de pesca tradicional que pode ser observada na Praia da Tocha?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Arte Xávega",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Pesca com redes de arrasto mecânicas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pesca com canas tradicionais",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pesca submarina",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Quais os desportos que são populares na Praia da Tocha?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Corrida e caminhadas na areia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Vela e remo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Natação sincronizada e mergulho",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Surf, bodyboard e windsurf",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "A Capela da Varziela é um importante local de:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Eventos desportivos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Peregrinação e culto religioso",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Comércio tradicional",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Administração municipal",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em que distrito de Portugal se encontra a Capela da Varziela?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Porto",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Viseu",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Coimbra",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Leiria",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Cantanhede pertence a qual região vitivinícola de Portugal?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Douro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Alentejo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Bairrada",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Dão",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Além do tinto, que outro tipo de vinho é muito produzido em Cantanhede?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Vinho Verde",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Espumante",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Vinho do Porto",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Vinho Moscatel",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que é a Arte Xávega?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Um tipo de cerâmica tradicional",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Uma técnica de pesca artesanal",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Um estilo de escultura em madeira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Uma forma de tecelagem antiga",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Tradicionalmente, como eram puxadas as redes da Arte Xávega?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Por barcos movidos a motor",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Por cavalos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Manualmente ou com juntas de bois",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Por tratores desde o século XVI",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da praia fluvial que pode observar na fotografia?",
+                    "image": "cantanhede1",
+                    "answers": [
+                        {
+                            "text": "Praia fluvial do Reconquinho",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia fluvial do Vimieiro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia fluvial dos Olhos da Fervença",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia fluvial das Sete Fontes",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da praia que pode observar na fotografia?",
+                    "image": "cantanhede2",
+                    "answers": [
+                        {
+                            "text": "Praia do Palheirão",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia da Tocha",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia de Quiaios",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Quais as características do terreno que contribuíram para a formação da Lagoa da Salgueira?",
+                    "image": "cantanhede3",
+                    "answers": [
+                        {
+                            "text": "Declive acentuado e rios subterrâneos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Depressões, baixo declive e nível freático superficial",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Altas montanhas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Presença de nascentes profundas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome deste museu, que integra a Rede Portuguesa de Museus?",
+                    "image": "cantanhede5",
+                    "answers": [
+                        {
+                            "text": "Museu de Cantanhede",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Museu da Pedra",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Museu do Calcário",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Museu de Ançã",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que é possível observar nas Margas do Jurássico Inferior?",
+                    "image": "cantanhede4",
+                    "answers": [
+                        {
+                            "text": "Rochas ígneas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Metais preciosos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Cristais de sal",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fósseis",
+                            "isCorrect": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "topicName": "Penacova",
+            "displayName": "Penacova",
+            "fill": "#6C9EE8",
+            "coordinates": [
+                {
+                    "x": 9000,
+                    "y": 4240
+                }
+            ],
+            "questions": [
+                {
+                    "question": "O que são as “conheiras” em Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Pilhas de pedras deixadas por antigas minas de ouro",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Rochas naturais formadas pela erosão",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Monumentos históricos romanos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Estruturas usadas para agricultura",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a altura da serra da Atalhada, um miradouro em Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "200 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "367 metros",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "500 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "600 metros",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Para que serviam originalmente os moinhos de vento na serra da Atalhada?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Produzir energia elétrica",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Moer cereais",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Bombear água",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Abrigar turistas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Por que motivo a “Livraria do Mondego” tem esse nome?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Por ter uma biblioteca ao lado",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Por ser um arquivo de documentos históricos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Por ser um local frequentado por escritores",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Porque as rochas parecem livros empilhados",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o nome do rio que passa por Penacova e é importante para a região?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Rio Tejo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rio Mondego",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Rio Dão",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rio Zêzere",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Onde se encontra um dos conjunto de moinhos de vento em Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Miradouro Penedo do Castro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Livraria do Mondego",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Portela de Oliveira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Casal de Santo Amaro",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O Miradouro Penedo do Castro localiza-se junto a que localidade?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Rebordosa",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Lorvão",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "São Pedro de Alva",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Penacova",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Que escritor famoso possuía moinhos em Portela de Oliveira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Miguel Torga",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Vitorino Nemésio",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Eça de Queiroz",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Almeida Garrett",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Quem projetou a Pérgola localizada no centro da vila de Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Emídio da Silva",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Raúl Lino",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Nicola Bigaglia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Augusto Mendes Simões Castro",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em que localidade se localizam os Fornos de Cal em Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Gavinhos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Chelo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Casal de Santo Amaro",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Friúmes",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da praia fluvial localizada junto à vila de Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Praia Fluvial da Ereira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia Fluvial de Ançã",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia Fluvial do Vimieiro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia Fluvial do Reconquinho",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual foi o principal objetivo da construção da Barragem da Aguieira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Produzir energia hidroelétrica e controlar cheias",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Criar um espaço para pesca",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Reduzir a salinidade da água",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Facilitar o transporte de mercadorias",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que caracteriza os meandros encaixados do rio Mondego?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Podem ser observados apenas por vista aérea",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Têm uma profundidade de 100 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "São artificiais e feitos pelo homem",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Estão localizados nas margens do rio",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a altura da Barragem da Raiva?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "20 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "36 metros",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "50 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "70 metros",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que caracteriza a água que brota na nascente localizada nas Caldas de Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "É altamente mineralizada",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Gasocarbónica",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Hipossalina, silicatada e cloretada sódica",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Contém grandes quantidades de cálcio",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Quem foi a figura histórica responsável pela fundação do Mosteiro de Lorvão?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "D. Afonso Henriques",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "D. Teresa de Leon",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "D. Sancho I",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "D. João III",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O Mosteiro de Lorvão foi famoso pela produção de:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Têxteis",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Manuscritos iluminados",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Cerâmica",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Vidro",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o Rio em Penacova que esteve ligado à extração de Ouro nos tempos dos Romanos?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Rio Tejo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rio Douro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rio Alva",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Rio Zêzere",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual das seguintes atrações turísticas se encontra em Penacova?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Conímbriga",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Piódão",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Mosteiro de Lorvão",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Castelo de Leiria",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Penacova é conhecida pela produção artesanal de:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Cerâmica",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Moinhos de vento e broa de milho",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Tapetes de Arraiolos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Bordados da Madeira",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Onde estão localizados os moinhos presentes na fotografia?",
+                    "image": "penacova1",
+                    "answers": [
+                        {
+                            "text": "Vila de Penacova",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Serra da Atalhada",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Perto da praia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Serra da Boa Viagem",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome do rio que podemos observar do Mirante Emídio da Silva?",
+                    "image": "penacova2",
+                    "answers": [
+                        {
+                            "text": "Rio Mondego",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Rio Tejo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rio Douro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rio Alva",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da praia fluvial presente na fotografia?",
+                    "image": "penacova3",
+                    "answers": [
+                        {
+                            "text": "Praia fluvial dos Olhos da Fervença",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia fluvial do Vimieiro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia fluvial do Reconquinho",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia fluvial das Sete Fontes",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da barragem que podemos observar na fotografia?",
+                    "image": "penacova4",
+                    "answers": [
+                        {
+                            "text": "Barragem da Aguieira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Barragem de Ranhados",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Barragem do Cabril",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Barragem de Crestuma",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da construção existente no Casal de Santo Amaro que podemos observar na fotografia?",
+                    "image": "penacova5",
+                    "answers": [
+                        {
+                            "text": "Fornos de cal do Casal de Santo Amaro",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Refúgio do Casal de Santo Amaro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fornalha do Casal de Santo Amaro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Abrigo do Casal de Santo Amaro",
+                            "isCorrect": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "topicName": "Mealhada",
+            "displayName": "Mealhada",
+            "fill": "#EDB498",
+            "coordinates": [
+                {
+                    "x": 6960,
+                    "y": 3945
+                }
+            ],
+            "questions": [
+                {
+                    "question": "Qual é o ponto mais alto da serra do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Ninho de Águia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Cruz Alta",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Senhora do Monte Alto",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Livraria do Mondego",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o nome da água termal famosa extraída na serra do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Água de Santa Cristina",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Água do Cruzeiro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Água de Luso",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Água de Silves",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em que século foi travada a Batalha do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Século XVII",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Século XVIII",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Século XIX",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Século XX",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A que se deve a cor vermelha das rochas do “Grés de Silves”?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Minerais vulcânicos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Óxido de ferro",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Presença de fósseis vegetais",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Influência de sedimentos marinhos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que tipo de árvores são predominantes na Mata Nacional do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Sobreiros e azinheiras",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pinheiros e eucaliptos",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Carvalho e castanheiros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Oliveiras e figueiras",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Durante que período geológico se formou a Bacia Carbonífera do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Ordovícico",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Carbónico",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Triássico",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Jurássico",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que é possível encontrar junto da Fonte de Santa Cristina?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Plantas fósseis",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Pegadas de dinossauros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rochas vulcânicas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Águas termais",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a altitude do ponto mais alto da Serra do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "444 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "780 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "549 metros",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "654 metros",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Onde está localizado o Miradouro do Moinho de Sula?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Serra da Estrela",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Serra de Montemuro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Serra do Bussaco",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Serra do Caramulo",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Água de Luso é conhecida por se infiltrar em:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Rochas vulcânicas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rochas quartzíticas",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Rochas calcárias",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Camadas de areia",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Por que motivo as pessoas procuram a fonte em Santa Cristina?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Pela água cristalina recomendada para tratamentos",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Pelo cenário histórico com fósseis de dinossauros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Para ver a cascata natural do local",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pela ligação com a Água de Luso",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Onde é captada a Água do Cruzeiro?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Na vila de Luso",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Na povoação de Vacariça",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Na serra do Bussaco",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "No Cabo Mondego",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o nome da fonte localizada na Mata Nacional do Bussaco que parece uma cascata?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Fonte da Senhora do Monte Alto",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte Fria",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Fonte de Santa Cristina",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte do Cruzeiro",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que caracteriza a Água de Luso?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "É hipossalina e tem propriedades terapêuticas",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "É originária de fontes vulcânicas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Contém um alto teor de sal",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "É usada como água na rede pública",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual era o principal uso das rochas do Carbónico?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Extração de petróleo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Produção de carvão e combustível",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Construção de monumentos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Extração de ouro",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em que século foi construído o Palácio do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Século XV",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Século XVII",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Século XIX",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Século XXI",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o estilo arquitetônico predominante do Palácio do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Gótico",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Neomanuelino",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Barroco",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Modernista",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual destes elementos NÃO faz parte do Palácio do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Torre central",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Azulejos históricos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Claustro carmelita",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Elevador panorâmico",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "O que torna a Mata Nacional do Bussaco um local único?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "A presença de espécies botânicas raras",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "A proximidade do mar",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "O cultivo exclusivo de videiras",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "O clima árido",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual era a função original do Palácio do Bussaco?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Mosteiro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Residência real",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pousada militar",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Palácio de caça",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da fonte localizada na Mata Nacional do Bussaco?",
+                    "image": "mealhada2",
+                    "answers": [
+                        {
+                            "text": "Fonte Verde",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte de São João",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte Fria",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Fonte de Santa Cristina",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Como se chama a fonte que pode observar na fotografia?",
+                    "image": "mealhada4",
+                    "answers": [
+                        {
+                            "text": "Fonte de Santa Cristina",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Fonte Fria",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte do Rio",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte Azul",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da fonte localizada no centro da vila do Luso?",
+                    "image": "mealhada3",
+                    "answers": [
+                        {
+                            "text": "Fonte de Santa Cristina",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte Fria",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Fonte de São João",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Fonte Escura",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Observando a fotografia, indique o nome do miradouro localizado na serra do Bussaco?",
+                    "image": "mealhada1",
+                    "answers": [
+                        {
+                            "text": "Miradouro da Cruz Alta",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Mirante Emídio da Silva",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Miradouro Penedo do Castro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Miradouro da Bandeira",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Após observar a fotografia, indique qual o nome do corte clássico do sinclinal do Bussaco.",
+                    "image": "mealhada5",
+                    "answers": [
+                        {
+                            "text": "Corte Galhano",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Corte do Louriçal",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Corte Cácemes",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Corte de São Pedro",
+                            "isCorrect": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "topicName": "Montemor- -o-Velho",
+            "displayName": "Montemor-o-Velho",
+            "fill": "#7A8E9E",
+            "coordinates": [
+                {
+                    "x": 5510,
+                    "y": 4895
+                }
+            ],
+            "questions": [
+                {
+                    "question": "O Paul do Taipal é uma Zona de Proteção Especial para:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Aves",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Árvores",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Rios",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Plantas aquáticas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a principal característica do Paul do Taipal?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Zona de pesca",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Produção de arroz",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Diversidade de flora",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Campo de dunas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual modalidade é praticada no Centro Náutico de Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Surf",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Canoagem",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Pesca",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Caminhadas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o comprimento do plano de água do Centro Náutico de Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "2000 metros",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "1000 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "500 metros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "3000 metros",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O plano de água do Centro Náutico de Montemor-o-Velho foi criado a partir de quê?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Uma antiga lagoa",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Um reservatório artificial",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Uma nascente natural",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Um leito abandonado do rio Mondego",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual a praia fluvial mais conhecida no concelho de Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Praia fluvial da Ereira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia Fluvial do Reconquinho",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia fluvial dos Olhos da Fervença",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia fluvial das Sete Fontes",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que produto é cultivado nos campos alagados do baixo Mondego?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Milho",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Arroz Carolino",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Trigo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Cevada",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o nome atual da capela próxima ao Esteiro da Ereira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Nossa Senhora do Rosário",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Santo António",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "São João Batista",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Nossa Senhora da Conceição",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o símbolo da Reserva Natural do Paul de Arzila?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Lontra",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Águia-real",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Garça-vermelha",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Cegonha-branca",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Reserva Natural do Paul de Arzila é uma área importante para:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Roedores",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Plantas aquáticas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Reptéis raros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Aves migratórias",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome do monumento religioso que se encontra no interior da muralha do castelo de Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Capela da Varziela",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Igreja de Nossa Senhora do Ó",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Igreja de Santa Maria da Alcáçova",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Mosteiro de Nossa Senhora dos Anjos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que se extraía na pedreira de Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Calcário margoso",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Granito",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Basalto",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Areia",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em que construção foi utilizada a pedra extraída da pedreira de Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Castelo de Montemor-o-Velho",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Catedral de Coimbra",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Mosteiro da Batalha",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Torre dos Clérigos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O Castelo de Montemor-o-Velho está classificado como:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Património Mundial",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Monumento Nacional",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Reserva Natural",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Sítio RAMSAR",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que tipo de paisagem pode ser vista do Castelo de Montemor-o-Velho para o sul?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "A cidade de Coimbra",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "A serra da Boa Viagem",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "O Oceano Atlântico",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Planície aluvial do Mondego",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Em que século foi fundado o Convento de Nossa Senhora do Carmo de Tentúgal?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Século XV",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Século XVI",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Século XVII",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Século XVIII",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": " Que rei concedeu benefícios em mantimentos às religiosas do Convento de Nossa Senhora do Carmo de Tentúgal em 1596?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "D. Manuel I",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "D. João IV",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "D. Filipe",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "D. Pedro II",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual a origem do Convento de Nossa Senhora dos Anjos, em Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Uma antiga fortaleza medieval",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Uma pequena ermida pertencente a Diogo da Azambuja",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Uma capela real mandada construir por D. Manuel I",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Um templo romano adaptado",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual foi a primeira estrutura a ser construída no Convento de Nossa Senhora dos Anjos, em Montemor-o-Velho?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "O claustro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "A igreja",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "A sacristia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "A sala do capítulo",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "No século XX, o Convento de Nossa Senhora dos Anjos, em Montemor-o-Velho, foi classificado como:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Património Mundial da UNESCO",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Monumento Nacional",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Tesouro Nacional",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Património Cultural Imaterial",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome do castelo que pode observar na fotografia?",
+                    "image": "montemor2",
+                    "answers": [
+                        {
+                            "text": "Castelo dos Mouro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Castelo de Montemor-o-Velho",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Castelo de Óbidos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Castelo de S. Jorge",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual destas modalidades NÃO é praticada no Centro Náutico de Montemor-o-Velho?",
+                    "image": "montemor3",
+                    "answers": [
+                        {
+                            "text": "Canoagem",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Remo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Mergulho",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Triatlo",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome do monumento religioso que pode observar na fotografia?",
+                    "image": "montemor4",
+                    "answers": [
+                        {
+                            "text": "Igreja de Nossa Senhora do Ó",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Mosteiro de Santa Maria de Seiça",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Mosteiro de Nossa Senhora dos Anjos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Capela da Varziela",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Observando a fotografia, indique o nome desta área localizada na proximidade de Montemor-o-Velho.",
+                    "image": "montemor1",
+                    "answers": [
+                        {
+                            "text": "Reserva Natural do Paul de Arzila",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Paul do Taipal",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Centro Náutico de Montemor-o-Velho",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia Fluvial da Ereira",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que infraestruturas desportivas existem na Praia Fluvial da Ereira?",
+                    "image": "montemor5",
+                    "answers": [
+                        {
+                            "text": "Piscina olímpica e campo de ténis",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Campos para prática de voleibol de praia",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Pista de atletismo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Circuito de ciclismo",
+                            "isCorrect": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "topicName": "Figueira da Foz",
+            "displayName": "Figueira da Foz",
+            "fill": "#4AB6B6",
+            "coordinates": [
+                {
+                    "x": 5190,
+                    "y": 4400
+                }
+            ],
+            "questions": [
+                {
+                    "question": "O Palácio Sotto Maior é conhecido pela sua arquitetura de que estilo arquitéctónico?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Barroco",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Gótico",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Neoclássico",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Modernista",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o objetivo principal do Núcleo Museológico do Mar?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Expor arte contemporânea",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Exibir equipamentos tecnológicos modernos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Expor artefatos arqueológicos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Recuperar e divulgar as memórias históricas e práticas piscatórias",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a área aproximada da Lagoa das Braças?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "50 hectares",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "30 hectares",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "15 hectares",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "70 hectares",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Como foi formada a Lagoa das Braças?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Floresta tropical",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Depressões no sistema dunar com nível freático superficial",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Áreas de montanha com vegetação rara",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Zonas agrícolas irrigadas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Lagoa das Braças é um local privilegiado para observar que tipo de fauna?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Aves",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Mamíferos aquáticos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Reptéis",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Insetos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a maior lagoa do litoral centro de Portugal?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Lagoa dos Teixoeiros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Lagoa da Vela",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Lagoa de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Lagoa de Quiaios",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Ilha da Morraceira foi formada devido à deposição de que tipo de materiais?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Rochas calcárias",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Areias e pedras de construção",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Materiais vulcânicos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Sedimentos aluvionares (areias e lodos)",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "A Ilha da Morraceira é um local importante para:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Pesca comercial",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Agricultura intensiva",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Observação de aves",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Turismo ecológico",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Praia do Cabedelo é conhecida por ter:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Águas cristalinas e tranquilas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Ondulação perfeita para desportos de onda",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Propriedades terapêuticas no seu areal",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Uma grande área de dunas móveis",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que desportos são populares na Praia do Cabedelo?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Surf e bodyboard",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Futebol de praia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Vela e windsurf",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Corridas de kitesurf",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Figueira da Foz possui uma das maiores praias urbanas da:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Europa",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Espanha",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Grécia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "França",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Onde está localizado o Miradouro da Bandeira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Na Serra da Estrela",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Na Serra da Boa Viagem",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "No Monte da Senhora da Estrela",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "No Monte de São João",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Em dias claros, o Miradouro da Montanha permite observar qual característica geográfica importante?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Mata do Bussaco",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "O curso do rio Tejo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "O cordão dunar e a foz do rio Mondego",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Livraria do Mondego",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Onde se pode encontrar o melhor afloramento, a nível internacional, para a idade do Bajociano?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Cabo Mondego",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Serra do Bussaco",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Serra da Atalhada",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Livraria do Mondego",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual atividade mineira que teve início no Cabo Mondego em 1773?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Extração de carvão mineral",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Extração de ouro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Extração de granito",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Extração de sal",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é uma das características marcantes do Mosteiro de Santa Maria de Seiça?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "A sua Arquitetura gótica",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "A sua fachada barroca",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "O claustro renascentista",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "O portal manuelino",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que é o Dólmen das Carniçosas, localizado na Serra das Alhadas?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Um castelo medieval",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Um monumento megalítico",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Uma igreja românica",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Um forte militar",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Torre do Relógio da Figueira da Foz está situada junto a que praia?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Praia da Nazaré",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia de Quiaios",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia da Claridade",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia do Meco",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O Palácio Sotto Mayor foi construído no início do século:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "XVI",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "XVIII",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "XX",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "XXI",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O Palácio Sotto Mayor está rodeado por:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Um grande jardim e lagos",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Um mosteiro antigo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Uma muralha medieval",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Uma zona industrial",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Como se chama a pequena aldeia, situada na freguesia de Quiaios, visível do Miradouro da Bandeira?",
+                    "image": "figueira1",
+                    "answers": [
+                        {
+                            "text": "Murtinheira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Leirosa",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Buarcos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Costa de lavos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome do miradouro, situado na Serra da Boa Viagem, que pode observar na fotografia?",
+                    "image": "figueira2",
+                    "answers": [
+                        {
+                            "text": "Miradouro da Senhora do Monte",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Miradouro da Montanha",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Miradouro da Vila",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Miradouro da Boa Viagem",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da área, que serve tanto como habitat para aves migratórias quanto para a produção de sal?",
+                    "image": "figueira3",
+                    "answers": [
+                        {
+                            "text": "Ilha de São Jorge",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Ilha de Tavira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Ilha do Fogo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Ilha da Morraceira",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da praia que pode observar na fotografia?",
+                    "image": "figueira4",
+                    "answers": [
+                        {
+                            "text": "Praia do Cabedelinho",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia do Forte",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia do Molhe Norte",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia da Claridade",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que atividade de pesca pode ser observada na Praia da Leirosa?",
+                    "image": "figueira5",
+                    "answers": [
+                        {
+                            "text": "Pesca comercial",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pesca com arpão",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pesca pela Arte Xávega",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Pesca submarina",
+                            "isCorrect": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "topicName": "Mira",
+            "displayName": "Mira",
+            "fill": "#EDBF77",
+            "coordinates": [
+                {
+                    "x": 4400,
+                    "y": 3030
+                }
+            ],
+            "questions": [
+                {
+                    "question": "Quantos moinhos compõem o núcleo do conjunto molinológico situado entre a Lagoa de Mira e o lugar de Casal de São Tomé?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Quatro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Cinco",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Seis",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Sete",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é o nome do canal que integra a Barrinha de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Canal de Aveiro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Canal da Gândara",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Canal de Mira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Canal da Gafanha",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a importância ecológica da Barrinha de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Serve como reserva de água potável para a Praia de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "É exclusivamente usada para atividades de lazer",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Atua como área agrícola para irrigação local",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "É uma área de conservação prioritária para a biodiversidade Europeia",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual é a cor predominante do Conglomerado de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Cinzenta",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Amarelada",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Esbranquiçada",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Avermelhada",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que a Lagoa de Mira oferece aos visitantes?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Um parque de diversões",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Trilhos pedestres e observação de aves",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Parques de estacionamento e restaurantes",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Áreas de camping e alojamento rural",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Por que razão os locais onde se encontra o conglomerado de Mira estão atualmente difíceis de observar?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Foram removidos devido à construção de estradas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Estão protegidos por legislação ambiental",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Estão cobertos por areias",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Foram desgastados pela ação do vento",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Lagoa de Mira é um importante local para observação de:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Mamíferos marinhos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Peixes de água doce",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Biodiversidade da região",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Aves",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Os moinhos da Lagoa são conhecidos como:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Moinhos de vento",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Moinhos de água",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Moinhos de rodízio",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Moinhos hidráulicos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Quantos moinhos de rodízio funcionam na Lagoa de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Quatro",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Dois",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Seis",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Três",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "O que é produzido frequentemente por um dos moinhos da Lagoa?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Farinha de trigo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Farinha de milho",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Óleo de oliva",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Farinha de centeio",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "O que caracteriza o local onde estão situados os Moinhos da Lagoa?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Grande área florestal",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Cordão dunar e agricultura de subsistência",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Grande concentração de edifícios urbanos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Zonas de pastagem para gado",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A Barrinha de Mira foi formada por:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "O fechamento de uma bacia marítima",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "A erosão das falésias",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "A ação de correntes marítimas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "A regularização do rio Mondego",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Que tipo de fauna é encontrada na Barrinha de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Aves aquáticas e peixes",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Répteis e mamíferos",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Insetos raros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Plantas endémicas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Onde é possivel observar o conglomerado de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Na região do Pinhal do Mondego",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Na região do Pinhal do Louro e próximo do Moinho do Ribeiro",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Na Figueira da Foz",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Na região do Pinhal de Gafanhas",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "A que período geológico pertence o conglomerado de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Jurássico",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Triássico",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Cretácico Superior",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Campaniano a Maastrichtiano",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "As Casas Gandaresas de Mira são tradicionalmente associadas a que tipo de economia?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Pastorícia",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Agricultura e pecuária",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Mineração",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Indústria naval",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual destes elementos é comum nas Casas Gandaresas?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Varandas de ferro forjado",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Telhados de colmo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Portas e janelas pintadas de cores vivas",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Azulejos decorativos",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "As Casas Gandaresas são comuns em Mira e também noutras zonas da:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": " Região Centro",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Madeira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Beira Interior",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Costa Vicentina",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o principal material utilizado na construção dos Palheiros de Mira?",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Pedra",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Madeira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Tijolo",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Concreto",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Os Palheiros de Mira são construídos sobre:",
+                    "image": null,
+                    "answers": [
+                        {
+                            "text": "Rochas",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Alvenaria de pedra",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Estacas de madeira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Bases de tijolo",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da praia, afastada de áreas urbanizadas que pode observar na fotografia?",
+                    "image": "mira1",
+                    "answers": [
+                        {
+                            "text": "Praia de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia do Poço da Cruz",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Praia do Palheirão",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Praia da Tocha",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Observando a fotografia, o edificio às riscas azuis e brancas, na Praia de Mira é uma:",
+                    "image": "mira2",
+                    "answers": [
+                        {
+                            "text": "Igreja",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Casa de pescador",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Capela",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Escola de surf",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome do objeto que podemos visualizar na fotografia?",
+                    "image": "mira4",
+                    "answers": [
+                        {
+                            "text": "Arenito",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Pedra calcária",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Areia de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Conglomerado de Mira",
+                            "isCorrect": true
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome da maior lagoa de Mira?",
+                    "image": "mira5",
+                    "answers": [
+                        {
+                            "text": "Barrinha de Mira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Lagoa de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Lagoa dos Teixoeiros",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Lagoa da Salgueira",
+                            "isCorrect": false
+                        }
+                    ]
+                },
+                {
+                    "question": "Qual o nome do conjunto molinológico situado entre a Lagoa de Mira e o lugar de Casal de São Tomé?",
+                    "image": "mira3",
+                    "answers": [
+                        {
+                            "text": "Moinhos do Montanha",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Moinhos de Mira",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Moinhos da Fazendeira",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Moinhos da Serra da Atalhada",
+                            "isCorrect": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
