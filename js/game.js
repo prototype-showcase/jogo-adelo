@@ -87,6 +87,20 @@ let endGameMenu = {
             textSize: 0,
             textLeading: 0
         }
+    },
+
+    button: {
+        text: "CONTINUAR",
+        textSize: 0,
+        textLeading: 0,
+        x: 0,
+        y: 0,
+        w: 0,
+        h: 0,
+        marginW: 0,
+        marginH: 0,
+        radius: 0,
+        color: null
     }
 }
 // 0 - Boot; 1 - Difficulty; 2 - Roulette; 3 - Question; 4 - End
@@ -239,6 +253,11 @@ function drawEndGame() {
 
     text(endGameMenu.text.text, endGameMenu.text.x, endGameMenu.text.y,
         endGameMenu.text.w, endGameMenu.text.h);
+
+    drawButton(endGameMenu.button.text, endGameMenu.button.y,
+        endGameMenu.button.w, endGameMenu.button.h,
+        endGameMenu.button.radius, endGameMenu.button.translateX, endGameMenu.button.translateY,
+        endGameMenu.button.textSize, endGameMenu.button.color, true);
 }
 
 function updateEndGame() {
@@ -279,10 +298,9 @@ function updateEndGame() {
     endGameMenu.answerBox.amount.w = textWidth(endGameMenu.answerBox.amount.text);
     endGameMenu.answerBox.amount.h = endGameMenu.answerBox.amount.textLeading;
     endGameMenu.answerBox.amount.x = endGameMenu.answerBox.topic.x + endGameMenu.answerBox.topic.w + endGameMenu.answerBox.margin / 2;
-    endGameMenu.answerBox.amount.y = endGameMenu.answerBox.y + endGameMenu.answerBox.amount.h/2.4 + endGameMenu.answerBox.margin;
+    endGameMenu.answerBox.amount.y = endGameMenu.answerBox.y + endGameMenu.answerBox.amount.h / 2.8 + endGameMenu.answerBox.margin;
 
-    endGameMenu.answerBox.topic.y = endGameMenu.answerBox.amount.y;
-
+    endGameMenu.answerBox.topic.y = endGameMenu.answerBox.amount.y + endGameMenu.answerBox.amount.h / 8;
 
     // Topic Box
     endGameMenu.answerBox.w = endGameMenu.answerBox.topic.w + endGameMenu.answerBox.amount.w + endGameMenu.answerBox.margin * 3;
@@ -290,7 +308,7 @@ function updateEndGame() {
 
     // Message Content
     endGameMenu.text.color = color("#FFFFFF");
-    endGameMenu.text.textSize = max(min(35, (width / 1920) * 35), 20);
+    endGameMenu.text.textSize = max(min(45, (width / 1920) * 45), 25);
     endGameMenu.text.textLeading = endGameMenu.text.textSize * 1;
     endGameMenu.text.text = endGameMenu.text.bad;
     textSize(endGameMenu.text.textSize);
@@ -301,6 +319,27 @@ function updateEndGame() {
     endGameMenu.text.y = endGameMenu.answerBox.y + endGameMenu.answerBox.h + endGameMenu.margin;
     endGameMenu.text.w = endGameMenu.w - endGameMenu.margin * 2;
     endGameMenu.text.h = getTextHeight(endGameMenu.text);
+
+    //Button Continue
+    endGameMenu.button.color = color("#EFD2AB");
+    endGameMenu.button.textSize = max(min(50, (width / 1920) * 50), 35);
+    endGameMenu.button.radius = max(min(50, (width / 1920) * 50), 25);
+    endGameMenu.button.marginW = max(min(20, (width / 1920) * 20), 15);
+    endGameMenu.button.marginH = max(min(15, (width / 1920) * 15), 10);
+
+    textSize(endGameMenu.button.textSize);
+    endGameMenu.button.w = textWidth(endGameMenu.button.text) + endGameMenu.button.marginW * 2;
+    endGameMenu.button.h = endGameMenu.button.textSize + endGameMenu.button.marginH * 2;
+    endGameMenu.button.y = -endGameMenu.button.h / 10;
+
+    if (width > height) {
+        endGameMenu.button.translateX = min(width - endGameMenu.button.w / 2 - endGameMenu.button.marginW,
+            width / 2 + endGameMenu.button.marginW * 3 + endGameMenu.button.w / 2);
+        endGameMenu.button.translateY = classsicDifficulty.translateY;
+    } else {
+        endGameMenu.button.translateX = classsicDifficulty.translateX;
+        endGameMenu.button.translateY = classsicDifficulty.translateY + classsicDifficulty.h + classsicDifficulty.marginW;
+    }
 }
 
 function newGame(dif) {
@@ -363,7 +402,7 @@ function scaleResize(windowWidth, windowHeight) {
     targetZoom = inZoom;
 }
 
-function drawButton(txt, y, w, h, radius, tX, tY, txtSize, color = "#589359", interact = false) {
+function drawButton(txt, y, w, h, radius, tX, tY, txtSize, color = "#589359", interact = false, textColor = "#FFFFFF") {
     textAlign(CENTER, CENTER);
     rectMode(CENTER);
     textSize(txtSize);
@@ -382,7 +421,7 @@ function drawButton(txt, y, w, h, radius, tX, tY, txtSize, color = "#589359", in
     fill(color);
     rect(0, 0, w, h, radius);
 
-    fill(255);
+    fill(textColor);
     text(txt, 0, y);
 
     pop();

@@ -81,153 +81,153 @@ let answerBox = {
 
 let quizImages = {
     cantanhede1: {
-        src: 'data/topicImg/cantanhede/1.png',
-        type: 'PNG',
+        src: 'data/topicImg/cantanhede/1.jpg',
+        type: 'JPG',
         d: null
     },
     cantanhede2: {
-        src: 'data/topicImg/cantanhede/2.png',
-        type: 'PNG',
+        src: 'data/topicImg/cantanhede/2.jpg',
+        type: 'JPG',
         d: null
     },
     cantanhede3: {
-        src: 'data/topicImg/cantanhede/3.png',
-        type: 'PNG',
+        src: 'data/topicImg/cantanhede/3.jpg',
+        type: 'JPG',
         d: null
     },
     cantanhede4: {
-        src: 'data/topicImg/cantanhede/4.png',
-        type: 'PNG',
+        src: 'data/topicImg/cantanhede/4.jpg',
+        type: 'JPG',
         d: null
     },
     cantanhede5: {
-        src: 'data/topicImg/cantanhede/5.png',
-        type: 'PNG',
+        src: 'data/topicImg/cantanhede/5.jpg',
+        type: 'JPG',
         d: null
     },
     penacova1: {
-        src: 'data/topicImg/penacova/1.png',
-        type: 'PNG',
+        src: 'data/topicImg/penacova/1.jpg',
+        type: 'JPG',
         d: null
     },
     penacova2: {
-        src: 'data/topicImg/penacova/2.png',
-        type: 'PNG',
+        src: 'data/topicImg/penacova/2.jpg',
+        type: 'JPG',
         d: null
     },
     penacova3: {
-        src: 'data/topicImg/penacova/3.png',
-        type: 'PNG',
+        src: 'data/topicImg/penacova/3.jpg',
+        type: 'JPG',
         d: null
     },
     penacova4: {
-        src: 'data/topicImg/penacova/4.png',
-        type: 'PNG',
+        src: 'data/topicImg/penacova/4.jpg',
+        type: 'JPG',
         d: null
     },
     penacova5: {
-        src: 'data/topicImg/penacova/5.png',
-        type: 'PNG',
+        src: 'data/topicImg/penacova/5.jpg',
+        type: 'JPG',
         d: null
     },
     mealhada1: {
-        src: 'data/topicImg/mealhada/1.png',
-        type: 'PNG',
+        src: 'data/topicImg/mealhada/1.jpg',
+        type: 'JPG',
         d: null
     },
     mealhada2: {
-        src: 'data/topicImg/mealhada/2.png',
-        type: 'PNG',
+        src: 'data/topicImg/mealhada/2.jpg',
+        type: 'JPG',
         d: null
     },
     mealhada3: {
-        src: 'data/topicImg/mealhada/3.png',
-        type: 'PNG',
+        src: 'data/topicImg/mealhada/3.jpg',
+        type: 'JPG',
         d: null
     },
     mealhada4: {
-        src: 'data/topicImg/mealhada/4.png',
-        type: 'PNG',
+        src: 'data/topicImg/mealhada/4.jpg',
+        type: 'JPG',
         d: null
     },
     mealhada5: {
-        src: 'data/topicImg/mealhada/5.png',
-        type: 'PNG',
+        src: 'data/topicImg/mealhada/5.jpg',
+        type: 'JPG',
         d: null
     },
     montemor1: {
-        src: 'data/topicImg/montemor/1.png',
-        type: 'PNG',
+        src: 'data/topicImg/montemor/1.jpg',
+        type: 'JPG',
         d: null
     },
     montemor2: {
-        src: 'data/topicImg/montemor/2.png',
-        type: 'PNG',
+        src: 'data/topicImg/montemor/2.jpg',
+        type: 'JPG',
         d: null
     },
     montemor3: {
-        src: 'data/topicImg/montemor/3.png',
-        type: 'PNG',
+        src: 'data/topicImg/montemor/3.jpg',
+        type: 'JPG',
         d: null
     },
     montemor4: {
-        src: 'data/topicImg/montemor/4.png',
-        type: 'PNG',
+        src: 'data/topicImg/montemor/4.jpg',
+        type: 'JPG',
         d: null
     },
     montemor5: {
-        src: 'data/topicImg/montemor/5.png',
-        type: 'PNG',
+        src: 'data/topicImg/montemor/5.jpg',
+        type: 'JPG',
         d: null
     },
     figueira1: {
-        src: 'data/topicImg/figueira/1.png',
-        type: 'PNG',
+        src: 'data/topicImg/figueira/1.jpg',
+        type: 'JPG',
         d: null
     },
     figueira2: {
-        src: 'data/topicImg/figueira/2.png',
-        type: 'PNG',
+        src: 'data/topicImg/figueira/2.jpg',
+        type: 'JPG',
         d: null
     },
     figueira3: {
-        src: 'data/topicImg/figueira/3.png',
-        type: 'PNG',
+        src: 'data/topicImg/figueira/3.jpg',
+        type: 'JPG',
         d: null
     },
     figueira4: {
-        src: 'data/topicImg/figueira/4.png',
-        type: 'PNG',
+        src: 'data/topicImg/figueira/4.jpg',
+        type: 'JPG',
         d: null
     },
     figueira5: {
-        src: 'data/topicImg/figueira/5.png',
-        type: 'PNG',
+        src: 'data/topicImg/figueira/5.jpg',
+        type: 'JPG',
         d: null
     },
     mira1: {
-        src: 'data/topicImg/mira/1.png',
-        type: 'PNG',
+        src: 'data/topicImg/mira/1.jpg',
+        type: 'JPG',
         d: null
     },
     mira2: {
-        src: 'data/topicImg/mira/2.png',
-        type: 'PNG',
+        src: 'data/topicImg/mira/2.jpg',
+        type: 'JPG',
         d: null
     },
     mira3: {
-        src: 'data/topicImg/mira/3.png',
-        type: 'PNG',
+        src: 'data/topicImg/mira/3.jpg',
+        type: 'JPG',
         d: null
     },
     mira4: {
-        src: 'data/topicImg/mira/4.png',
-        type: 'PNG',
+        src: 'data/topicImg/mira/4.jpg',
+        type: 'JPG',
         d: null
     },
     mira5: {
-        src: 'data/topicImg/mira/5.png',
-        type: 'PNG',
+        src: 'data/topicImg/mira/5.jpg',
+        type: 'JPG',
         d: null
     }
 }
