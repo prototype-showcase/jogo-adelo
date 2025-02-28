@@ -227,7 +227,7 @@ function menuScreen() {
 
 function loadContent() {
     // Function to Load the game content
-    totalAssets = Object.keys(content).length + Object.keys(quizImages).length + (mapCols * mapRows);
+    totalAssets = Object.keys(content).length + (mapCols * mapRows); //+ Object.keys(quizImages).length 
     for (let key in content) {
         if (content[key].type === 'PNG' || content[key].type === 'JPG') {
             content[key].d = loadImage(content[key].src, assetLoaded);
@@ -239,7 +239,7 @@ function loadContent() {
             content[key].d = loadFont(content[key].src, assetLoaded);
         }
     }
-    for (let key in quizImages) {
+    /*for (let key in quizImages) {
         if (quizImages[key].type === 'PNG' || quizImages[key].type === 'JPG') {
             quizImages[key].d = loadImage(quizImages[key].src, assetLoaded);
         } else if (quizImages[key].type === 'JSON') {
@@ -249,7 +249,7 @@ function loadContent() {
         } else if (quizImages[key].type === 'TTF' || quizImages[key].type === 'OTF') {
             quizImages[key].d = loadFont(quizImages[key].src, assetLoaded);
         }
-    }
+    }*/
     loadTiles(); // Function to Load the Pre-Tiled Map
 }
 

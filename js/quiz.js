@@ -79,6 +79,8 @@ let answerBox = {
     wTopic: 0
 };
 
+let quizImageLoad = null;
+
 let quizImages = {
     cantanhede1: {
         src: 'data/topicImg/cantanhede/1.jpg',
@@ -610,8 +612,9 @@ async function updateQuestion() {
         );
 
         let maskRatio = questionText.image.maskW / questionText.image.maskH;
-        let imgW = quizImages[questionText.image.name].d.width;
-        let imgH = quizImages[questionText.image.name].d.height;
+        quizImageLoad = await loadImage(quizImages[questionText.image.name].src);
+        let imgW = quizImageLoad;
+        let imgH = quizImageLoad;
         let newW, newH;
 
         if (imgW / imgH > maskRatio) {
@@ -625,7 +628,7 @@ async function updateQuestion() {
         let imgX = (imgW - newW) / 2;
         let imgY = (imgH - newH) / 2;
 
-        questionText.image.mask = quizImages[questionText.image.name].d.get(imgX, imgY, newW, newH);
+        questionText.image.mask = quizImageLoad;
         questionText.image.mask.mask(maskedImage);
 
 
@@ -656,7 +659,7 @@ async function updateQuestion() {
         imgX = (imgW - newW) / 2;
         imgY = (imgH - newH) / 2;
 
-        questionText.image.maskIcon = quizImages[questionText.image.name].d.get(imgX, imgY, newW, newH);
+        questionText.image.maskIcon = quizImageLoad;
         questionText.image.maskIcon.mask(maskedImage);
     }
     updateElements();
