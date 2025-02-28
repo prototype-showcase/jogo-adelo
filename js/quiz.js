@@ -787,7 +787,7 @@ function setScore(result, id) {
     setTimeout(() => {
         if (score.right + score.wrong >= score.total) {
             updateEndGame();
-            playStage = 4;
+            playStage = 1;
         } else {
             playStage = 2;
             goToObject(content.roulette);
