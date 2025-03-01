@@ -53,31 +53,17 @@ let endGameMenu = {
             h: 0,
             color: null
         },
-        emoji: {
-            text: null,
-            textSize: 0,
-            textLeading: 0,
-            x: 0,
-            y: 0,
-            w: 0,
-            h: 0,
-            color: null
-        },
         bad: {
-            text: "Ainda há caminho a percorrer, mas estás a aprender!",
-            emoji: "💪"
+            text: "Ainda há caminho a percorrer, mas estás a aprender!"
         },
         good: {
-            text: "Estás quase lá! Bom trabalho!",
-            emoji: "😉"
+            text: "Estás quase lá! Bom trabalho!"
         },
         veryGood: {
-            text: "Muito bom! Só faltou um pouco para a perfeição!",
-            emoji: "👏"
+            text: "Muito bom! Só faltou um pouco para a perfeição!"
         },
         perfect: {
-            text: "És imbatível! Perfeito",
-            emoji: "🌟"
+            text: "És imbatível! Perfeito"
         }
     },
 
@@ -292,14 +278,6 @@ function drawEndGame() {
     text(endGameMenu.content.text.text, endGameMenu.content.text.x, endGameMenu.content.text.y,
         endGameMenu.content.text.w, endGameMenu.content.text.h);
 
-    // Emoji
-    textAlign(CENTER, TOP);
-    textFont(content.Emoji.d);
-    fill(endGameMenu.content.emoji.color);
-    textSize(endGameMenu.content.emoji.textSize);
-    textLeading(endGameMenu.content.emoji.textLeading);
-    text(endGameMenu.content.emoji.text, endGameMenu.content.emoji.x, endGameMenu.content.emoji.y);
-
     pop();
 
     textAlign(LEFT, TOP);
@@ -357,29 +335,13 @@ function updateEndGame() {
     endGameMenu.answerBox.h = max(endGameMenu.answerBox.amount.h, endGameMenu.answerBox.topic.h) + endGameMenu.answerBox.margin * 2;
 
     // Message Content
-    if (score.right < 5) {
-        endGameMenu.content.text.text = endGameMenu.content.bad.text;
-        endGameMenu.content.emoji.text = endGameMenu.content.bad.emoji;
-    } else if (score.right < 9) {
-        endGameMenu.content.text.text = endGameMenu.content.good.text;
-        endGameMenu.content.emoji.text = endGameMenu.content.good.emoji;
-    } else if (score.right < 12) {
-        endGameMenu.content.text.text = endGameMenu.content.veryGood.text;
-        endGameMenu.content.emoji.text = endGameMenu.content.veryGood.emoji;
-    } else {
-        endGameMenu.content.text.text = endGameMenu.content.perfect.text;
-        endGameMenu.content.emoji.text = endGameMenu.content.perfect.emoji;
-    }
-
+    if (score.right < 5) endGameMenu.content.text.text = endGameMenu.content.bad.text;
+    else if (score.right < 9) endGameMenu.content.text.text = endGameMenu.content.good.text;
+    else if (score.right < 12) endGameMenu.content.text.text = endGameMenu.content.veryGood.text;
+    else endGameMenu.content.text.text = endGameMenu.content.perfect.text;
     endGameMenu.content.text.color = color("#FFFFFF");
-    endGameMenu.content.emoji.color = color("#FFFFFF");
-
     endGameMenu.content.text.textSize = max(min(45, (width / 1920) * 45), 25);
     endGameMenu.content.text.textLeading = endGameMenu.content.text.textSize * 1;
-
-    endGameMenu.content.emoji.textSize = max(min(65, (width / 1920) * 65), 45);
-    endGameMenu.content.emoji.textLeading = endGameMenu.content.text.textSize * 1;
-
 
     // Message Position
     textSize(endGameMenu.content.text.textSize);
@@ -389,15 +351,8 @@ function updateEndGame() {
     endGameMenu.content.text.w = endGameMenu.w - endGameMenu.margin * 2;
     endGameMenu.content.text.h = getTextHeight(endGameMenu.content.text);
 
-    textSize(endGameMenu.content.emoji.textSize);
-    textLeading(endGameMenu.content.emoji.textLeading);
-    endGameMenu.content.emoji.x = width / 2;
-    endGameMenu.content.emoji.y = endGameMenu.content.text.y + endGameMenu.content.text.h + endGameMenu.margin;
-    endGameMenu.content.emoji.w = endGameMenu.w - endGameMenu.margin * 2;
-    endGameMenu.content.emoji.h = getTextHeight(endGameMenu.content.emoji);
-
     //Button Continue
-    endGameMenu.button.color = color("#EFD2AB");
+    endGameMenu.button.color = color("#e27146");
     endGameMenu.button.textSize = max(min(50, (width / 1920) * 50), 35);
     endGameMenu.button.radius = max(min(50, (width / 1920) * 50), 25);
     endGameMenu.button.marginW = max(min(20, (width / 1920) * 20), 15);
@@ -409,7 +364,7 @@ function updateEndGame() {
     endGameMenu.button.y = -endGameMenu.button.h / 10;
 
     endGameMenu.button.translateX = width / 2;
-    endGameMenu.button.translateY = endGameMenu.content.emoji.y + endGameMenu.content.emoji.h +
+    endGameMenu.button.translateY = endGameMenu.content.text.y + endGameMenu.content.text.h +
         endGameMenu.button.h + endGameMenu.margin / 2;
 
     endGameMenu.h = endGameMenu.button.translateY - endGameMenu.y + endGameMenu.button.h / 2 + endGameMenu.margin;
@@ -460,7 +415,7 @@ function windowResized() {
     targetX = targetX - windowWidth / 2;
     targetY = targetY - windowHeight / 2;
 
-    if (playStage == 0) updateLoading();
+    if (playStage == 0 || playStage == 1) updateLoading();
     if (playStage == 3) updateQuestion();
     if (playStage == 4) updateEndGame();
 
@@ -562,7 +517,8 @@ function updateElements() {
     updateButtons();
     // Difficulty
     updateDifficultyButtons();
-    // End Game
+    // Highscore
+    updateHighscore();
 }
 
 function updateTimer() {
@@ -680,6 +636,11 @@ function mainMenu() {
         challengeDifficulty.w, challengeDifficulty.h,
         challengeDifficulty.radius, challengeDifficulty.translateX, challengeDifficulty.translateY,
         challengeDifficulty.textSize, "#B25757", true);
+    // Highscore
+    drawButton(highscore.text, highscore.y,
+        highscore.w, highscore.h,
+        highscore.radius, highscore.translateX,
+        highscore.translateY, highscore.textSize);
 }
 
 function playMusic() {

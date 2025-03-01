@@ -288,6 +288,8 @@ let score = {
     h: 0,
     marginW: 0,
     marginH: 0,
+    translateX: 0,
+    translateY: 0
 }
 
 let countdownTime = 30;
@@ -783,6 +785,7 @@ function setScore(result, id) {
     setTimeout(() => {
         if (score.right + score.wrong >= score.total) {
             updateEndGame();
+            saveHighscore(score.right);
             playStage = 4;
         } else {
             playStage = 2;
