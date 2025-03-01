@@ -281,7 +281,7 @@ let score = {
     textLeading: 0,
     right: 0,
     wrong: 0,
-    total: 1,
+    total: 12,
     x: 0,
     y: 0,
     w: 0,
@@ -743,7 +743,6 @@ function setQuestion(topicId) {
     topicBox.color = color(topic.fill);
 
     let question = topic.questions[int(random(topic.questions.length))];
-    question = topic.questions[20];
     questionText.text = question.question;
     questionText.image.name = question.image;
     if (questionText.image.name != null) questionText.image.display = true;
