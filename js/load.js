@@ -88,10 +88,6 @@ let content = {
         src: "data/fonts/Anton-Regular.ttf",
         type: 'TTF',
         d: null
-    }, HabitasMedium: {
-        src: "data/fonts/Habitas-Medium.otf",
-        type: 'OTF',
-        d: null
     }, HabitasBold: {
         src: "data/fonts/Habitas-Bold.otf",
         type: 'OTF',
@@ -102,10 +98,6 @@ let content = {
         d: null
     }, HabitasSemibold: {
         src: "data/fonts/Habitas-Semibold.otf",
-        type: 'OTF',
-        d: null
-    }, Emoji: {
-        src: "data/fonts/EmojiOneColor.otf",
         type: 'OTF',
         d: null
     }, music: {
