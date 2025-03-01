@@ -281,7 +281,7 @@ let score = {
     textLeading: 0,
     right: 0,
     wrong: 0,
-    total: 12,
+    total: 1,
     x: 0,
     y: 0,
     w: 0,
@@ -468,7 +468,7 @@ async function updateQuestion() {
     topicBox.marginH = max(min(25, (width / 1920) * 25), 15);
 
     // *-*
-    topicText.w = textWidth(topicText.text) + topicBox.marginW/2;
+    topicText.w = textWidth(topicText.text) + topicBox.marginW / 2;
     if (topicText.w > questionBox.w - (topicText.textLeading + topicBox.marginH * 2) - topicBox.marginW * 2) {
         topicText.text = topicText.breakText;
         topicText.w = questionBox.w - (topicText.textLeading + topicBox.marginH * 2) - topicBox.marginW * 2;
@@ -606,55 +606,55 @@ async function updateQuestion() {
         );
 
         let maskRatio = questionText.image.maskW / questionText.image.maskH;
-        quizImageLoad = await loadImage(quizImages[questionText.image.name].src);
-        let imgW = quizImageLoad;
-        let imgH = quizImageLoad;
-        let newW, newH;
+        quizImageLoad = await loadImage(quizImages[questionText.image.name].src, function () {
+            let imgW = quizImageLoad.width;
+            let imgH = quizImageLoad.height;
+            let newW, newH;
 
-        if (imgW / imgH > maskRatio) {
-            newH = imgH;
-            newW = imgH * maskRatio;
-        } else {
-            newW = imgW;
-            newH = imgW / maskRatio;
-        }
+            if (imgW / imgH > maskRatio) {
+                newH = imgH;
+                newW = imgH * maskRatio;
+            } else {
+                newW = imgW;
+                newH = imgW / maskRatio;
+            }
 
-        let imgX = (imgW - newW) / 2;
-        let imgY = (imgH - newH) / 2;
+            let imgX = (imgW - newW) / 2;
+            let imgY = (imgH - newH) / 2;
 
-        questionText.image.mask = quizImageLoad;
-        questionText.image.mask.mask(maskedImage);
+            questionText.image.mask = quizImageLoad.get(imgX, imgY, newW, newH);;
+            questionText.image.mask.mask(maskedImage);
 
+            // Icon Masked Image
+            questionText.image.maskIconW = topicText.textLeading + topicBox.marginH * 2;
+            questionText.image.maskIconH = questionText.image.maskIconW;
+            questionText.image.maskIconX = questionBox.w / 2 - questionText.image.maskIconH;
+            questionText.image.maskIconY = questionBox.y - questionText.image.maskIconH + topicBox.marginW;;
 
-        // Icon Masked Image
-        questionText.image.maskIconW = topicText.textLeading + topicBox.marginH * 2;
-        questionText.image.maskIconH = questionText.image.maskIconW;
-        questionText.image.maskIconX = questionBox.w / 2 - questionText.image.maskIconH;
-        questionText.image.maskIconY = questionBox.y - questionText.image.maskIconH + topicBox.marginW;;
+            maskedImage = createGraphics(questionText.image.maskIconW, questionText.image.maskIconH);
+            maskedImage.noStroke();
+            maskedImage.fill(255);
+            maskedImage.rect(0, 0,
+                questionText.image.maskIconW, questionText.image.maskIconH,
+                topicBox.radius);
 
-        maskedImage = createGraphics(questionText.image.maskIconW, questionText.image.maskIconH);
-        maskedImage.noStroke();
-        maskedImage.fill(255);
-        maskedImage.rect(0, 0,
-            questionText.image.maskIconW, questionText.image.maskIconH,
-            topicBox.radius
-        );
+            maskRatio = questionText.image.maskIconW / questionText.image.maskIconH;
 
-        maskRatio = questionText.image.maskIconW / questionText.image.maskIconH;
+            if (imgW / imgH > maskRatio) {
+                newH = imgH;
+                newW = imgH;
+            } else {
+                newW = imgW;
+                newH = imgW;
+            }
 
-        if (imgW / imgH > maskRatio) {
-            newH = imgH;
-            newW = imgH;
-        } else {
-            newW = imgW;
-            newH = imgW;
-        }
+            imgX = (imgW - newW) / 2;
+            imgY = (imgH - newH) / 2;
 
-        imgX = (imgW - newW) / 2;
-        imgY = (imgH - newH) / 2;
+            questionText.image.maskIcon = quizImageLoad.get(imgX, imgY, newW, newH);
+            questionText.image.maskIcon.mask(maskedImage);
 
-        questionText.image.maskIcon = quizImageLoad;
-        questionText.image.maskIcon.mask(maskedImage);
+        });
     }
     updateElements();
 }
@@ -743,7 +743,7 @@ function setQuestion(topicId) {
     topicBox.color = color(topic.fill);
 
     let question = topic.questions[int(random(topic.questions.length))];
-
+    question = topic.questions[20];
     questionText.text = question.question;
     questionText.image.name = question.image;
     if (questionText.image.name != null) questionText.image.display = true;

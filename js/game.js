@@ -338,6 +338,7 @@ function updateEndGame() {
     endGameMenu.answerBox.topic.x = endGameMenu.answerBox.x + endGameMenu.answerBox.margin;
 
     // Amount Content
+    endGameMenu.answerBox.amount.text = score.right + "/" + score.total;
     endGameMenu.answerBox.amount.textSize = max(min(50, (width / 1920) * 50), 25);
     endGameMenu.answerBox.amount.textLeading = endGameMenu.answerBox.amount.textSize * 1;
     endGameMenu.answerBox.amount.color = color("#FFFFFF");
@@ -346,13 +347,13 @@ function updateEndGame() {
 
     endGameMenu.answerBox.amount.w = textWidth(endGameMenu.answerBox.amount.text);
     endGameMenu.answerBox.amount.h = endGameMenu.answerBox.amount.textLeading;
-    endGameMenu.answerBox.amount.x = endGameMenu.answerBox.topic.x + endGameMenu.answerBox.topic.w + endGameMenu.answerBox.margin / 2;
+    endGameMenu.answerBox.amount.x = endGameMenu.answerBox.topic.x + endGameMenu.answerBox.topic.w + endGameMenu.answerBox.margin;
     endGameMenu.answerBox.amount.y = endGameMenu.answerBox.y + endGameMenu.answerBox.amount.h / 2.8 + endGameMenu.answerBox.margin;
 
     endGameMenu.answerBox.topic.y = endGameMenu.answerBox.amount.y + endGameMenu.answerBox.amount.h / 8;
 
     // Topic Box
-    endGameMenu.answerBox.w = endGameMenu.answerBox.topic.w + endGameMenu.answerBox.amount.w + endGameMenu.answerBox.margin * 3;
+    endGameMenu.answerBox.w = endGameMenu.answerBox.topic.w + endGameMenu.answerBox.amount.w + endGameMenu.answerBox.margin * 4;
     endGameMenu.answerBox.h = max(endGameMenu.answerBox.amount.h, endGameMenu.answerBox.topic.h) + endGameMenu.answerBox.margin * 2;
 
     // Message Content
@@ -408,9 +409,12 @@ function updateEndGame() {
     endGameMenu.button.y = -endGameMenu.button.h / 10;
 
     endGameMenu.button.translateX = width / 2;
-    endGameMenu.button.translateY = endGameMenu.content.emoji.y + endGameMenu.content.emoji.h + endGameMenu.button.h + endGameMenu.margin / 2;
+    endGameMenu.button.translateY = endGameMenu.content.emoji.y + endGameMenu.content.emoji.h +
+        endGameMenu.button.h + endGameMenu.margin / 2;
 
     endGameMenu.h = endGameMenu.button.translateY - endGameMenu.y + endGameMenu.button.h / 2 + endGameMenu.margin;
+
+    endGameMenu.button.translateY = (height - endGameMenu.button.h) / 2 - endGameMenu.margin;
 
     endGameMenu.translateY = (height - endGameMenu.h) / 2;
     endGameMenu.button.translateY += endGameMenu.h / 2;
