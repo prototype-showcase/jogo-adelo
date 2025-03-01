@@ -104,6 +104,10 @@ let content = {
         src: "data/fonts/Habitas-Semibold.otf",
         type: 'OTF',
         d: null
+    }, Emoji: {
+        src: "data/fonts/EmojiOneColor.otf",
+        type: 'OTF',
+        d: null
     }, music: {
         src: 'data/music.mp3',
         type: 'MP3',
@@ -227,7 +231,7 @@ function menuScreen() {
 
 function loadContent() {
     // Function to Load the game content
-    totalAssets = Object.keys(content).length + (mapCols * mapRows); //+ Object.keys(quizImages).length 
+    totalAssets = Object.keys(content).length + (mapCols * mapRows);
     for (let key in content) {
         if (content[key].type === 'PNG' || content[key].type === 'JPG') {
             content[key].d = loadImage(content[key].src, assetLoaded);
@@ -239,17 +243,6 @@ function loadContent() {
             content[key].d = loadFont(content[key].src, assetLoaded);
         }
     }
-    /*for (let key in quizImages) {
-        if (quizImages[key].type === 'PNG' || quizImages[key].type === 'JPG') {
-            quizImages[key].d = loadImage(quizImages[key].src, assetLoaded);
-        } else if (quizImages[key].type === 'JSON') {
-            quizImages[key].d = loadJSON(quizImages[key].src, assetLoaded);
-        } else if (quizImages[key].type === 'WAV' || quizImages[key].type === 'MP3') {
-            quizImages[key].d = loadSound(quizImages[key].src, assetLoaded);
-        } else if (quizImages[key].type === 'TTF' || quizImages[key].type === 'OTF') {
-            quizImages[key].d = loadFont(quizImages[key].src, assetLoaded);
-        }
-    }*/
     loadTiles(); // Function to Load the Pre-Tiled Map
 }
 

@@ -276,12 +276,12 @@ let startTime = {
 };
 
 let score = {
-    text: "PERGUNTA: 0/12",
+    text: "PERGUNTA: 0/0",
     textSize: 0,
     textLeading: 0,
     right: 0,
     wrong: 0,
-    total: 12, // -------------------------------
+    total: 12,
     x: 0,
     y: 0,
     w: 0,
@@ -347,22 +347,16 @@ function drawQuestion() {
 
 
         if (selectedAnswer != null) {
-            //if (selectedAnswer == i || selectedAnswer == -1)
             if (answerText.answer[i]) fill(answerBox.colorActive);
             else fill(answerBox.colorWrong);
-            //else
-            //fill(answerBox.colorDisable);
         } else {
             fill(answerBox.colorActive);
         }
         rect(0, 0, answerBox.w, answerBox.h, answerBox.radius);
 
         if (selectedAnswer != null) {
-            //if (selectedAnswer == i)
             if (answerText.answer[i]) fill(answerTopicText.colorActive);
             else fill(answerTopicText.colorWrong);
-            //else
-            //fill(answerTopicText.colorDisable);
         } else {
             fill(answerTopicText.colorActive);
         }
@@ -790,7 +784,7 @@ function setScore(result, id) {
     setTimeout(() => {
         if (score.right + score.wrong >= score.total) {
             updateEndGame();
-            playStage = 1;
+            playStage = 4;
         } else {
             playStage = 2;
             goToObject(content.roulette);

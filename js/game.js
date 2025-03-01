@@ -42,19 +42,43 @@ let endGameMenu = {
     margin: 0,
     radius: 0,
 
-    text: {
-        text: null,
-        bad: "Ainda há caminho a percorrer, mas estás a aprender! 💪",
-        good: "Estás quase lá! Bom trabalho! 😉",
-        veryGood: "Muito bom! Só faltou um pouco para a perfeição! 👏",
-        perfect: "És imbatível! Perfeito 🌟",
-        textSize: 0,
-        textLeading: 0,
-        x: 0,
-        y: 0,
-        w: 0,
-        h: 0,
-        color: null
+    content: {
+        text: {
+            text: null,
+            textSize: 0,
+            textLeading: 0,
+            x: 0,
+            y: 0,
+            w: 0,
+            h: 0,
+            color: null
+        },
+        emoji: {
+            text: null,
+            textSize: 0,
+            textLeading: 0,
+            x: 0,
+            y: 0,
+            w: 0,
+            h: 0,
+            color: null
+        },
+        bad: {
+            text: "Ainda há caminho a percorrer, mas estás a aprender!",
+            emoji: "💪"
+        },
+        good: {
+            text: "Estás quase lá! Bom trabalho!",
+            emoji: "😉"
+        },
+        veryGood: {
+            text: "Muito bom! Só faltou um pouco para a perfeição!",
+            emoji: "👏"
+        },
+        perfect: {
+            text: "És imbatível! Perfeito",
+            emoji: "🌟"
+        }
     },
 
     answerBox: {
@@ -162,7 +186,18 @@ function mousePressed() {
         dist(mouseX, mouseY, content.spinButton.x - offsetX, content.spinButton.y - offsetY) < content.spinButton.d.width / 2 * currentZoom) {
         rouletteRotation();
         rouletteBlock = false;
-    } else if (playStage == 3) answerSelection();
+    } else if (playStage == 3) {
+        answerSelection();
+    } else if (playStage == 4) {
+        if (mouseX > endGameMenu.button.translateX - endGameMenu.button.w / 2 &&
+            mouseX < endGameMenu.button.translateX + endGameMenu.button.w / 2 &&
+            mouseY > endGameMenu.button.translateY - endGameMenu.button.h / 2 &&
+            mouseY < endGameMenu.button.translateY + endGameMenu.button.h / 2) {
+            playStage = 1;
+            score.right = 0;
+            score.wrong = 0;
+        }
+    }
 
     if (playStage >= 2 &&
         mouseX > content.backButton.x - content.backButton.w / 2 &&
@@ -221,7 +256,10 @@ function drawContent() { // Draw all map and assets content
 }
 
 function drawEndGame() {
+    push();
+    translate(0, endGameMenu.translateY);
     rectMode(CORNER);
+    textFont(content.HabitasSemibold.d);
 
     // Main Box
     fill(endGameMenu.color);
@@ -247,13 +285,25 @@ function drawEndGame() {
 
     // Message
     textAlign(LEFT, TOP);
-    fill(endGameMenu.text.color);
-    textSize(endGameMenu.text.textSize);
-    textLeading(endGameMenu.text.textLeading);
+    fill(endGameMenu.content.text.color);
+    textSize(endGameMenu.content.text.textSize);
+    textLeading(endGameMenu.content.text.textLeading);
 
-    text(endGameMenu.text.text, endGameMenu.text.x, endGameMenu.text.y,
-        endGameMenu.text.w, endGameMenu.text.h);
+    text(endGameMenu.content.text.text, endGameMenu.content.text.x, endGameMenu.content.text.y,
+        endGameMenu.content.text.w, endGameMenu.content.text.h);
 
+    // Emoji
+    textAlign(CENTER, TOP);
+    textFont(content.Emoji.d);
+    fill(endGameMenu.content.emoji.color);
+    textSize(endGameMenu.content.emoji.textSize);
+    textLeading(endGameMenu.content.emoji.textLeading);
+    text(endGameMenu.content.emoji.text, endGameMenu.content.emoji.x, endGameMenu.content.emoji.y);
+
+    pop();
+
+    textAlign(LEFT, TOP);
+    textFont(content.HabitasSemibold.d);
     drawButton(endGameMenu.button.text, endGameMenu.button.y,
         endGameMenu.button.w, endGameMenu.button.h,
         endGameMenu.button.radius, endGameMenu.button.translateX, endGameMenu.button.translateY,
@@ -263,9 +313,8 @@ function drawEndGame() {
 function updateEndGame() {
     //Main Box
     endGameMenu.w = width - (width / 3 * inZoom) * 2;
-    endGameMenu.h = height - (height / 3 * inZoom) * 2;
+    endGameMenu.y = 0;
     endGameMenu.x = (width - endGameMenu.w) / 2;
-    endGameMenu.y = (height - endGameMenu.h) / 2;
     endGameMenu.margin = max(min(30, (width / 1920) * 30), 20);
     endGameMenu.radius = max(min(50, (width / 1920) * 50), 25);
     endGameMenu.color = color("#6DB671");
@@ -307,18 +356,44 @@ function updateEndGame() {
     endGameMenu.answerBox.h = max(endGameMenu.answerBox.amount.h, endGameMenu.answerBox.topic.h) + endGameMenu.answerBox.margin * 2;
 
     // Message Content
-    endGameMenu.text.color = color("#FFFFFF");
-    endGameMenu.text.textSize = max(min(45, (width / 1920) * 45), 25);
-    endGameMenu.text.textLeading = endGameMenu.text.textSize * 1;
-    endGameMenu.text.text = endGameMenu.text.bad;
-    textSize(endGameMenu.text.textSize);
-    textLeading(endGameMenu.text.textLeading);
+    if (score.right < 5) {
+        endGameMenu.content.text.text = endGameMenu.content.bad.text;
+        endGameMenu.content.emoji.text = endGameMenu.content.bad.emoji;
+    } else if (score.right < 9) {
+        endGameMenu.content.text.text = endGameMenu.content.good.text;
+        endGameMenu.content.emoji.text = endGameMenu.content.good.emoji;
+    } else if (score.right < 12) {
+        endGameMenu.content.text.text = endGameMenu.content.veryGood.text;
+        endGameMenu.content.emoji.text = endGameMenu.content.veryGood.emoji;
+    } else {
+        endGameMenu.content.text.text = endGameMenu.content.perfect.text;
+        endGameMenu.content.emoji.text = endGameMenu.content.perfect.emoji;
+    }
+
+    endGameMenu.content.text.color = color("#FFFFFF");
+    endGameMenu.content.emoji.color = color("#FFFFFF");
+
+    endGameMenu.content.text.textSize = max(min(45, (width / 1920) * 45), 25);
+    endGameMenu.content.text.textLeading = endGameMenu.content.text.textSize * 1;
+
+    endGameMenu.content.emoji.textSize = max(min(65, (width / 1920) * 65), 45);
+    endGameMenu.content.emoji.textLeading = endGameMenu.content.text.textSize * 1;
+
 
     // Message Position
-    endGameMenu.text.x = endGameMenu.x + endGameMenu.margin;
-    endGameMenu.text.y = endGameMenu.answerBox.y + endGameMenu.answerBox.h + endGameMenu.margin;
-    endGameMenu.text.w = endGameMenu.w - endGameMenu.margin * 2;
-    endGameMenu.text.h = getTextHeight(endGameMenu.text);
+    textSize(endGameMenu.content.text.textSize);
+    textLeading(endGameMenu.content.text.textLeading);
+    endGameMenu.content.text.x = endGameMenu.x + endGameMenu.margin;
+    endGameMenu.content.text.y = endGameMenu.answerBox.y + endGameMenu.answerBox.h + endGameMenu.margin;
+    endGameMenu.content.text.w = endGameMenu.w - endGameMenu.margin * 2;
+    endGameMenu.content.text.h = getTextHeight(endGameMenu.content.text);
+
+    textSize(endGameMenu.content.emoji.textSize);
+    textLeading(endGameMenu.content.emoji.textLeading);
+    endGameMenu.content.emoji.x = width / 2;
+    endGameMenu.content.emoji.y = endGameMenu.content.text.y + endGameMenu.content.text.h + endGameMenu.margin;
+    endGameMenu.content.emoji.w = endGameMenu.w - endGameMenu.margin * 2;
+    endGameMenu.content.emoji.h = getTextHeight(endGameMenu.content.emoji);
 
     //Button Continue
     endGameMenu.button.color = color("#EFD2AB");
@@ -332,17 +407,18 @@ function updateEndGame() {
     endGameMenu.button.h = endGameMenu.button.textSize + endGameMenu.button.marginH * 2;
     endGameMenu.button.y = -endGameMenu.button.h / 10;
 
-    if (width > height) {
-        endGameMenu.button.translateX = min(width - endGameMenu.button.w / 2 - endGameMenu.button.marginW,
-            width / 2 + endGameMenu.button.marginW * 3 + endGameMenu.button.w / 2);
-        endGameMenu.button.translateY = classsicDifficulty.translateY;
-    } else {
-        endGameMenu.button.translateX = classsicDifficulty.translateX;
-        endGameMenu.button.translateY = classsicDifficulty.translateY + classsicDifficulty.h + classsicDifficulty.marginW;
-    }
+    endGameMenu.button.translateX = width / 2;
+    endGameMenu.button.translateY = endGameMenu.content.emoji.y + endGameMenu.content.emoji.h + endGameMenu.button.h + endGameMenu.margin / 2;
+
+    endGameMenu.h = endGameMenu.button.translateY - endGameMenu.y + endGameMenu.button.h / 2 + endGameMenu.margin;
+
+    endGameMenu.translateY = (height - endGameMenu.h) / 2;
+    endGameMenu.button.translateY += endGameMenu.h / 2;
 }
 
 function newGame(dif) {
+    updateScore();
+
     difficulty = dif;
     nRolls = 0;
     rouletteBlock = true;
