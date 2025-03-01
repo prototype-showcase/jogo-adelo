@@ -84,7 +84,7 @@ let content = {
         w: 0,
         h: 0,
         margin: 0
-    }, Antom: {
+    }, Anton: {
         src: "data/fonts/Anton-Regular.ttf",
         type: 'TTF',
         d: null

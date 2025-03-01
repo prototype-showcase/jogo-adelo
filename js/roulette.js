@@ -38,7 +38,7 @@ async function setRoulette() {
     rouletteGraphic.image(content.roulette.d, 0, 0);
 
     rouletteGraphic.fill(255);
-    rouletteGraphic.textFont(content.Antom.d);
+    rouletteGraphic.textFont(content.Anton.d);
     rouletteGraphic.textAlign(CENTER, BASELINE);
     rouletteGraphic.textSize(16 * (w / 300));
     rouletteGraphic.textLeading(rouletteGraphic.textSize());
