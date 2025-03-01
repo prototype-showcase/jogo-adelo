@@ -84,6 +84,10 @@ let content = {
         w: 0,
         h: 0,
         margin: 0
+    }, Antom: {
+        src: "data/fonts/Anton-Regular.ttf",
+        type: 'TTF',
+        d: null
     }, HabitasBold: {
         src: "data/fonts/Habitas-Bold.otf",
         type: 'OTF',
