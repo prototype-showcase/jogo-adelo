@@ -386,7 +386,7 @@ function drawQuestion() {
     }
 
     fill(questionBox.color);
-    if (questionText.image.display) {
+    if (questionText.image.maskIcon != null && questionText.image.mask != null && questionText.image.display) {
         if (questionText.image.mobile)
             rect(questionBox.x + questionBox.w, questionBox.y, questionText.image.w, questionText.image.h, 0, topicBox.radius, topicBox.radius, 0);
         else {
@@ -414,7 +414,7 @@ function drawQuestion() {
                     questionText.image.maskIconW, questionText.image.maskIconH - topicText.textLeading / 2);
             }
         }
-        if (questionText.image.mask != null && (questionText.image.mobile || !questionText.image.hide)) {
+        if ((questionText.image.mobile || !questionText.image.hide)) {
             imageMode(CENTER);
             image(questionText.image.mask, questionText.image.maskX, questionText.image.maskY, questionText.image.maskW, questionText.image.maskH);
         }
