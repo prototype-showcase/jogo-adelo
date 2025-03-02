@@ -657,7 +657,6 @@ async function updateQuestion() {
             questionText.image.maskIcon = quizImageLoad.get(imgX, imgY, newW, newH);
             questionText.image.maskIcon.mask(maskedImage);
 
-
             quizImageLoad.remove();
             quizImageLoad = null;
         });
