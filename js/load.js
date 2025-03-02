@@ -147,6 +147,8 @@ function setup() { // Setup Content
     scaleResize(windowWidth, windowHeight);
 
     updateLoading();
+
+    frameRate(24);
 }
 
 function loadScreen() { // Loading Screen
