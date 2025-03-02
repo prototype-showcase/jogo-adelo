@@ -626,6 +626,7 @@ async function updateQuestion() {
 
             questionText.image.mask = quizImageLoad.get(imgX, imgY, newW, newH);;
             questionText.image.mask.mask(maskedImage);
+            maskedImage = undefined;
 
             // Icon Masked Image
             questionText.image.maskIconW = topicText.textLeading + topicBox.marginH * 2;
@@ -655,8 +656,8 @@ async function updateQuestion() {
 
             questionText.image.maskIcon = quizImageLoad.get(imgX, imgY, newW, newH);
             questionText.image.maskIcon.mask(maskedImage);
-
         });
+        maskedImage = undefined;
     }
     updateElements();
 }
