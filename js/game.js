@@ -195,13 +195,8 @@ function mouseClicked() {
     }
 }
 
-function touchStarted() {
-    mousePressed();
-    return false;
-}
-
-function touchMoved() {
-    mousePressed();
+function touchEnd() {
+    mouseClicked();
     return false;
 }
 
