@@ -151,7 +151,7 @@ function mousePressed() {
         mouseY < startButton.translateY + startButton.h / 2) {
         playStage = 1;
         content.clickSound.d.play();
-        //playMusic();
+        playMusic();
     } else if (playStage == 1) {
         // Dificulty
         if (mouseX > classsicDifficulty.translateX - classsicDifficulty.w / 2 &&
