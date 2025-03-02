@@ -148,7 +148,7 @@ function setup() { // Setup Content
 
     updateLoading();
 
-    frameRate(24);
+    frameRate(30);
 }
 
 function loadScreen() { // Loading Screen

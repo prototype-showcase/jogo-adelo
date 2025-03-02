@@ -1,9 +1,9 @@
 // Map Movement Values
 let offsetX = 0, offsetY = 0;
 let targetX = 0, targetY = 0;
-let panSpeed = 0.1;
+let panSpeed = 0.2;
 let inZoom = 1, outZoom = 0.5;
-let bootZoom = 0.1;
+let bootZoom = 0.2;
 let currentZoom = bootZoom;
 let targetZoom = bootZoom;
 
