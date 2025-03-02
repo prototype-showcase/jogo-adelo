@@ -195,7 +195,7 @@ function mouseClicked() {
     }
 }
 
-function touchEnd() {
+function touchEnded() {
     mouseClicked();
     return false;
 }
