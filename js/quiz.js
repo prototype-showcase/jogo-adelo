@@ -414,7 +414,7 @@ function drawQuestion() {
                     questionText.image.maskIconW, questionText.image.maskIconH - topicText.textLeading / 2);
             }
         }
-        if (questionText.image.mobile || !questionText.image.hide) {
+        if (questionText.image.mask != null && (questionText.image.mobile || !questionText.image.hide)) {
             imageMode(CENTER);
             image(questionText.image.mask, questionText.image.maskX, questionText.image.maskY, questionText.image.maskW, questionText.image.maskH);
         }
@@ -745,6 +745,7 @@ function setQuestion(topicId) {
     topicBox.color = color(topic.fill);
 
     let question = topic.questions[int(random(topic.questions.length))];
+
     questionText.text = question.question;
     questionText.image.name = question.image;
     if (questionText.image.name != null) questionText.image.display = true;
