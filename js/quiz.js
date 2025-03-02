@@ -764,8 +764,6 @@ function setQuestion(topicId) {
         answerText.answer[i] = answers[i].isCorrect;
     }
 
-    questionText.image.maskIcon = null;
-    questionText.image.mask = null;
     updateQuestion();
     playStage = 3;
     startTime.start = millis();
