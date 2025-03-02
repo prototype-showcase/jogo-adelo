@@ -608,7 +608,8 @@ async function updateQuestion() {
         );
 
         let maskRatio = questionText.image.maskW / questionText.image.maskH;
-        quizImageLoad = await loadImage(quizImages[questionText.image.name].src, function () {
+        quizImageLoad = loadImage(quizImages[questionText.image.name].src, function () {
+            console.log(quizImages[questionText.image.name].src, quizImageLoad.width, quizImageLoad.height);
             let imgW = quizImageLoad.width;
             let imgH = quizImageLoad.height;
             let newW, newH;
@@ -626,7 +627,6 @@ async function updateQuestion() {
 
             questionText.image.mask = quizImageLoad.get(imgX, imgY, newW, newH);;
             questionText.image.mask.mask(maskedImage);
-            maskedImage = undefined;
 
             // Icon Masked Image
             questionText.image.maskIconW = topicText.textLeading + topicBox.marginH * 2;
@@ -656,7 +656,7 @@ async function updateQuestion() {
 
             questionText.image.maskIcon = quizImageLoad.get(imgX, imgY, newW, newH);
             questionText.image.maskIcon.mask(maskedImage);
-            
+
             quizImageLoad = undefined;
             maskedImage = undefined;
         });
