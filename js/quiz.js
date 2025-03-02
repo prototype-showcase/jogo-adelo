@@ -609,7 +609,6 @@ async function updateQuestion() {
 
         let maskRatio = questionText.image.maskW / questionText.image.maskH;
         quizImageLoad = loadImage(quizImages[questionText.image.name].src, function () {
-            console.log(quizImages[questionText.image.name].src, quizImageLoad.width, quizImageLoad.height);
             let imgW = quizImageLoad.width;
             let imgH = quizImageLoad.height;
             let newW, newH;
