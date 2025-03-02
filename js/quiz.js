@@ -658,6 +658,11 @@ async function updateQuestion() {
 
             quizImageLoad = undefined;
             maskedImage = undefined;
+
+            questionText.image.hide = false;
+            setTimeout(function () {
+                questionText.image.hide = true;
+            }, 2000);
         });
     }
     updateElements();
@@ -762,11 +767,6 @@ function setQuestion(topicId) {
     updateQuestion();
     playStage = 3;
     startTime.start = millis();
-
-    questionText.image.hide = false;
-    setTimeout(function () {
-        questionText.image.hide = true;
-    }, 1500);
 }
 
 function shuffleArray(array) {
