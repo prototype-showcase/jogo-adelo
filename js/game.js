@@ -648,8 +648,8 @@ function playMusic() {
     let defaultVolume = 0.15;
     let duration = 5000;
 
-    content.music.d.play();
     content.music.d.loop();
+
     let volumeInterval = setInterval(() => {
         if (initialVolume < defaultVolume) {
             initialVolume += 0.01;
