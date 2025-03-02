@@ -143,7 +143,7 @@ function draw() {
     }
 }
 
-function mousePressed() {
+function mouseClicked() {
     if (playStage == 0 && loadPercentage == 1 &&
         mouseX > startButton.translateX - startButton.w / 2 &&
         mouseX < startButton.translateX + startButton.w / 2 &&
