@@ -50,6 +50,24 @@ let content = {
         w: 0,
         h: 0,
         margin: 0
+    }, volumeUp: {
+        src: 'data/volumeUp.png',
+        type: 'PNG',
+        d: null,
+        x: 0,
+        y: 0,
+        w: 0,
+        h: 0,
+        margin: 0
+    }, volumeMute: {
+        src: 'data/volumeMute.png',
+        type: 'PNG',
+        d: null,
+        x: 0,
+        y: 0,
+        w: 0,
+        h: 0,
+        margin: 0
     }, pointer: {
         src: 'data/pointer.png',
         type: 'PNG',
@@ -107,7 +125,8 @@ let content = {
     }, music: {
         src: 'data/music.mp3',
         type: 'MP3',
-        d: null
+        d: null,
+        status: false
     }
 };
 

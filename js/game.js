@@ -113,6 +113,7 @@ let endGameMenu = {
         color: null
     }
 }
+
 // 0 - Boot; 1 - Difficulty; 2 - Roulette; 3 - Question; 4 - End
 
 let menuPosition = {
@@ -136,6 +137,14 @@ function draw() {
         drawContent(); // Draw all map and assets content
     }
 
+    if (playStage > 0) {
+        // Back
+        drawIcon(content.music.status ? content.volumeUp.d : content.volumeMute.d,
+            content.volumeUp.w, content.volumeUp.h,
+            content.volumeUp.x, content.volumeUp.y,
+            "#589359", true);
+    }
+
     if (cursorPointer) {
         cursor('pointer');
     } else {
@@ -143,7 +152,7 @@ function draw() {
     }
 }
 
-function mouseClicked() {
+function mouseRelease() {
     if (playStage == 0 && loadPercentage == 1 &&
         mouseX > startButton.translateX - startButton.w / 2 &&
         mouseX < startButton.translateX + startButton.w / 2 &&
@@ -193,10 +202,18 @@ function mouseClicked() {
         goBack();
         content.clickSound.d.play();
     }
+
+    if (playStage > 0 &&
+        mouseX > content.volumeUp.x - content.volumeUp.w / 2 &&
+        mouseX < content.volumeUp.x + content.volumeUp.w / 2 &&
+        mouseY > content.volumeUp.y - content.volumeUp.h / 2 &&
+        mouseY < content.volumeUp.y + content.volumeUp.h / 2) {
+        playMusic();
+    }
 }
 
 function touchEnded() {
-    mouseClicked();
+    mouseRelease();
     return false;
 }
 
@@ -565,6 +582,19 @@ function updateButtons() {
     content.backButton.h = content.backButton.w;
     content.backButton.x = content.backButton.w / 2 + content.backButton.margin;
     content.backButton.y = height - content.backButton.h / 2 - content.backButton.margin;
+
+    // Volume Button
+    content.volumeUp.margin = max(min(20, (width / 1920) * 20), 15);
+    content.volumeUp.w = max(min(50, (width / 1920) * 50), 25) + content.backButton.margin;
+    content.volumeUp.h = content.backButton.w;
+    content.volumeUp.x = width - content.backButton.w / 2 - content.backButton.margin;
+    content.volumeUp.y = content.backButton.h / 2 + content.backButton.margin;
+
+    content.volumeMute.margin = content.volumeUp.margin;
+    content.volumeMute.w = content.volumeUp.w;
+    content.volumeMute.h = content.volumeUp.h;
+    content.volumeMute.x = content.volumeUp.x;
+    content.volumeMute.y = content.volumeUp.y;
 }
 
 function updateDifficultyButtons() {
@@ -639,21 +669,26 @@ function mainMenu() {
 }
 
 function playMusic() {
-    let initialVolume = 0;
-    let defaultVolume = 0.15;
-    let duration = 5000;
+    if (content.music.status) {
+        content.music.d.stop();
+    } else {
+        let initialVolume = 0;
+        let defaultVolume = 0.15;
+        let duration = 5000;
 
-    content.music.d.loop();
+        content.music.d.loop();
 
-    let volumeInterval = setInterval(() => {
-        if (initialVolume < defaultVolume) {
-            initialVolume += 0.01;
-            content.music.d.setVolume(initialVolume);
-        } else {
-            content.music.d.setVolume(defaultVolume);
-            clearInterval(volumeInterval);
-        }
-    }, duration / 100);
+        let volumeInterval = setInterval(() => {
+            if (initialVolume < defaultVolume) {
+                initialVolume += 0.01;
+                content.music.d.setVolume(initialVolume);
+            } else {
+                content.music.d.setVolume(defaultVolume);
+                clearInterval(volumeInterval);
+            }
+        }, duration / 100);
+    }
+    content.music.status = !content.music.status;
 }
 
 function isMobileDevice() {
