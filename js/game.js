@@ -138,7 +138,12 @@ function draw() {
     }
 
     if (playStage > 0) {
-        // Back
+        // Info
+        drawIcon(content.infoButton.d,
+            content.infoButton.w, content.infoButton.h,
+            content.infoButton.x, content.infoButton.y,
+            "#589359", true);
+        // Music
         drawIcon(content.music.status ? content.volumeUp.d : content.volumeMute.d,
             content.volumeUp.w, content.volumeUp.h,
             content.volumeUp.x, content.volumeUp.y,
@@ -153,62 +158,57 @@ function draw() {
 }
 
 function mouseRelease() {
-    if (playStage == 0 && loadPercentage == 1 &&
-        mouseX > startButton.translateX - startButton.w / 2 &&
-        mouseX < startButton.translateX + startButton.w / 2 &&
-        mouseY > startButton.translateY - startButton.h / 2 &&
-        mouseY < startButton.translateY + startButton.h / 2) {
-        playStage = 1;
-        content.clickSound.d.play();
-        playMusic();
-    } else if (playStage == 1) {
-        // Dificulty
-        if (mouseX > classsicDifficulty.translateX - classsicDifficulty.w / 2 &&
-            mouseX < classsicDifficulty.translateX + classsicDifficulty.w / 2 &&
-            mouseY > classsicDifficulty.translateY - classsicDifficulty.h / 2 &&
-            mouseY < classsicDifficulty.translateY + classsicDifficulty.h / 2) {
-            newGame(0);
-            content.clickSound.d.play();
-        } else if (mouseX > challengeDifficulty.translateX - challengeDifficulty.w / 2 &&
-            mouseX < challengeDifficulty.translateX + challengeDifficulty.w / 2 &&
-            mouseY > challengeDifficulty.translateY - challengeDifficulty.h / 2 &&
-            mouseY < challengeDifficulty.translateY + challengeDifficulty.h / 2) {
-            newGame(1);
-            content.clickSound.d.play();
-        }
-    } else if (playStage == 2 && rouletteBlock &&
-        // Spin Roulette
-        dist(mouseX, mouseY, content.spinButton.x - offsetX, content.spinButton.y - offsetY) < content.spinButton.d.width / 2 * currentZoom) {
-        rouletteRotation();
-        rouletteBlock = false;
-    } else if (playStage == 3) {
-        answerSelection();
-    } else if (playStage == 4) {
-        if (mouseX > endGameMenu.button.translateX - endGameMenu.button.w / 2 &&
-            mouseX < endGameMenu.button.translateX + endGameMenu.button.w / 2 &&
-            mouseY > endGameMenu.button.translateY - endGameMenu.button.h / 2 &&
-            mouseY < endGameMenu.button.translateY + endGameMenu.button.h / 2) {
+    if (!content.infoButton.active) {
+        if (playStage == 0 && loadPercentage == 1 &&
+            mouseX > startButton.translateX - startButton.w / 2 &&
+            mouseX < startButton.translateX + startButton.w / 2 &&
+            mouseY > startButton.translateY - startButton.h / 2 &&
+            mouseY < startButton.translateY + startButton.h / 2) {
             playStage = 1;
-            score.right = 0;
-            score.wrong = 0;
+            content.clickSound.d.play();
+            playMusic();
+        } else if (playStage == 1) {
+            // Dificulty
+            if (mouseX > classsicDifficulty.translateX - classsicDifficulty.w / 2 &&
+                mouseX < classsicDifficulty.translateX + classsicDifficulty.w / 2 &&
+                mouseY > classsicDifficulty.translateY - classsicDifficulty.h / 2 &&
+                mouseY < classsicDifficulty.translateY + classsicDifficulty.h / 2) {
+                newGame(0);
+                content.clickSound.d.play();
+            } else if (mouseX > challengeDifficulty.translateX - challengeDifficulty.w / 2 &&
+                mouseX < challengeDifficulty.translateX + challengeDifficulty.w / 2 &&
+                mouseY > challengeDifficulty.translateY - challengeDifficulty.h / 2 &&
+                mouseY < challengeDifficulty.translateY + challengeDifficulty.h / 2) {
+                newGame(1);
+                content.clickSound.d.play();
+            }
+        } else if (playStage == 2 && rouletteBlock &&
+            // Spin Roulette
+            dist(mouseX, mouseY, content.spinButton.x - offsetX, content.spinButton.y - offsetY) < content.spinButton.d.width / 2 * currentZoom) {
+            rouletteRotation();
+            rouletteBlock = false;
+        } else if (playStage == 3) {
+            answerSelection();
+        } else if (playStage == 4) {
+            if (mouseX > endGameMenu.button.translateX - endGameMenu.button.w / 2 &&
+                mouseX < endGameMenu.button.translateX + endGameMenu.button.w / 2 &&
+                mouseY > endGameMenu.button.translateY - endGameMenu.button.h / 2 &&
+                mouseY < endGameMenu.button.translateY + endGameMenu.button.h / 2) {
+                playStage = 1;
+                score.right = 0;
+                score.wrong = 0;
+            }
         }
-    }
 
-    if (playStage >= 2 &&
-        mouseX > content.backButton.x - content.backButton.w / 2 &&
-        mouseX < content.backButton.x + content.backButton.w / 2 &&
-        mouseY > content.backButton.y - content.backButton.h / 2 &&
-        mouseY < content.backButton.y + content.backButton.h / 2) {
-        goBack();
-        content.clickSound.d.play();
-    }
+        if (playStage >= 2 && checkButtonClick(mouseX, mouseY, content.volumeUp)) {
+            goBack();
+            content.clickSound.d.play();
+        }
 
-    if (playStage > 0 &&
-        mouseX > content.volumeUp.x - content.volumeUp.w / 2 &&
-        mouseX < content.volumeUp.x + content.volumeUp.w / 2 &&
-        mouseY > content.volumeUp.y - content.volumeUp.h / 2 &&
-        mouseY < content.volumeUp.y + content.volumeUp.h / 2) {
-        playMusic();
+        if (playStage > 0) {
+            if (checkButtonClick(mouseX, mouseY, content.volumeUp)) playMusic();
+            else if (checkButtonClick(mouseX, mouseY, content.infoButton)) displayInfo();
+        }
     }
 }
 
@@ -241,11 +241,7 @@ function drawContent() { // Draw all map and assets content
     // Score
     textFont(content.HabitasBold.d);
     drawButton(score.text, score.y, score.w, score.h, score.radius, score.translateX, score.translateY, score.textSize);
-    // Info
-    drawIcon(content.infoButton.d,
-        content.infoButton.w, content.infoButton.h,
-        content.infoButton.x, content.infoButton.y,
-        "#589359", true);
+
     // Back
     drawIcon(content.backButton.d,
         content.backButton.w, content.backButton.h,
@@ -568,6 +564,15 @@ function updateScore() {
     score.translateY = score.marginW + score.h / 2;
 }
 
+function checkButtonClick(x, y, item) {
+    if (x > item.x - item.w / 2 &&
+        x < item.x + item.w / 2 &&
+        y > item.y - item.h / 2 &&
+        y < item.y + item.h / 2)
+        return true;
+    else return false;
+}
+
 function updateButtons() {
     // Info Button
     content.infoButton.margin = max(min(20, (width / 1920) * 20), 15);
@@ -693,4 +698,11 @@ function playMusic() {
 
 function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+function displayInfo() {
+    if (content.infoButton.active) content.infoButton.html.classList.add("hide");
+    else content.infoButton.html.classList.remove("hide");
+
+    content.infoButton.active = !content.infoButton.active;
 }

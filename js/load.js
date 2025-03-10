@@ -49,7 +49,9 @@ let content = {
         y: 0,
         w: 0,
         h: 0,
-        margin: 0
+        margin: 0,
+        html: document.getElementById("about"),
+        active: false
     }, volumeUp: {
         src: 'data/volumeUp.png',
         type: 'PNG',
@@ -168,6 +170,8 @@ function setup() { // Setup Content
     updateLoading();
 
     frameRate(30);
+
+    content.infoButton.html.querySelector(".close").addEventListener("click", displayInfo);
 }
 
 function loadScreen() { // Loading Screen
