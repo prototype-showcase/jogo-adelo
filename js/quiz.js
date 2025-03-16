@@ -289,7 +289,19 @@ let score = {
     marginW: 0,
     marginH: 0,
     translateX: 0,
-    translateY: 0
+    translateY: 0,
+    countdown: {
+        r: 24,
+        m: 6,
+        rColor: "#a0cc92",
+        wColor: "#e27146",
+        dColor: "#7a8e9e",
+        bColor: "#fcd191",
+        result: [],
+        w: 0,
+        x: 0,
+        y: 0
+    }
 }
 
 let countdownTime = 30;
@@ -780,6 +792,8 @@ function shuffleArray(array) {
 function setScore(result, id) {
     if (result) score.right++;
     else score.wrong++;
+    score.countdown.result.push(result);
+
     selectedAnswer = id;
     answerSound(result);
     playStageChange = true;
@@ -787,9 +801,11 @@ function setScore(result, id) {
 
     setTimeout(() => {
         if (score.right + score.wrong >= score.total) {
-            updateEndGame();
-            saveHighscore(score.right);
+            updateEndGame();        
+            saveHighscore(difficulty == 0, score.right);
             playStage = 4;
+            
+            score.countdown.result = [];
         } else {
             playStage = 2;
             goToObject(content.roulette);
@@ -797,7 +813,13 @@ function setScore(result, id) {
         playStageChange = false;
         rouletteBlock = true;
         selectedAnswer = null;
+        clearQuestion();
     }, 2500);
+}
+
+function clearQuestion() {
+    questionText.image.maskIcon = undefined;
+    quizImageLoad = undefined;
 }
 
 function answerSound(answer) {

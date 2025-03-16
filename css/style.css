@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 body,
 html {
     margin: 0;
@@ -8,6 +10,9 @@ html {
     touch-action: none;
     -webkit-user-select: none;
     position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 #about {
@@ -24,23 +29,25 @@ html {
 #about .content {
     width: 50%;
     height: auto;
-    max-height: 50%;
-    min-height: 100px;
     padding: 20px;
     background: white;
     border-radius: 24px;
     position: relative;
 }
 
-#about .content .text {
+#about .content .textContainer {
     overflow-y: auto;
+    max-height: 50vh;
+    min-height: 100px;
+    position: relative;
 }
 
 #about .content .close {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 24px;
+    margin: 24px 48px 24px 24px;
+    z-index: 10;
 }
 
 #about.hide {

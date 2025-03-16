@@ -200,7 +200,7 @@ function mouseRelease() {
             }
         }
 
-        if (playStage >= 2 && checkButtonClick(mouseX, mouseY, content.volumeUp)) {
+        if (playStage >= 2 && checkButtonClick(mouseX, mouseY, content.backButton)) {
             goBack();
             content.clickSound.d.play();
         }
@@ -240,7 +240,7 @@ function drawContent() { // Draw all map and assets content
     }
     // Score
     textFont(content.HabitasBold.d);
-    drawButton(score.text, score.y, score.w, score.h, score.radius, score.translateX, score.translateY, score.textSize);
+    drawScore();
 
     // Back
     drawIcon(content.backButton.d,
@@ -445,10 +445,29 @@ function scaleResize(windowWidth, windowHeight) {
     targetZoom = inZoom;
 }
 
-function drawButton(txt, y, w, h, radius, tX, tY, txtSize, color = "#589359", interact = false, textColor = "#FFFFFF") {
-    textAlign(CENTER, CENTER);
+function drawScore() {
+    drawButton(score.text, score.y, score.w, score.h, score.radius, score.translateX, score.translateY, score.textSize);
+
+    push();
+    translate(score.countdown.x - score.countdown.w / 2, score.countdown.translateY);
+    for (let i = 0; i < score.total; i++) {
+        if (i < score.countdown.result.length)
+            if (score.countdown.result[i]) fill(score.countdown.rColor);
+            else fill(score.countdown.wColor);
+        else fill(score.countdown.dColor);
+        strokeWeight(2);
+        stroke(score.countdown.bColor);
+
+        circle(score.countdown.r / 2 + (score.countdown.r + score.countdown.m) * i, 0, score.countdown.r);
+    }
+    pop();
+}
+
+function drawButton(txt, y, w, h, radius, tX, tY, txtSize, color = "#589359", interact = false, textColor = "#FFFFFF", hAlign = CENTER, hMargin = 0) {
+    textAlign(hAlign, CENTER);
     rectMode(CENTER);
     textSize(txtSize);
+    textLeading(txtSize * 1.2);
 
     push();
     translate(tX, tY);
@@ -464,6 +483,7 @@ function drawButton(txt, y, w, h, radius, tX, tY, txtSize, color = "#589359", in
     fill(color);
     rect(0, 0, w, h, radius);
 
+    if (hAlign == LEFT) translate(-tX + hMargin, 0);
     fill(textColor);
     text(txt, 0, y);
 
@@ -494,6 +514,11 @@ function drawTimer() {
     drawButton(timerText, startTime.y, startTime.w, startTime.h, startTime.radius, startTime.translateX, startTime.translateY, startTime.textSize, txtColor)
 
     if (remainingTime < 0 && !playStageChange) setScore(false, -1);
+}
+
+function getTimer() {
+    let elapsed = millis() - startTime.start;
+    return countdownTime - floor(elapsed / 1000);
 }
 
 function drawIcon(img, w, h, x, y, color, interact = false) {
@@ -541,8 +566,13 @@ function updateTimer() {
     startTime.h = startTime.textSize + startTime.marginH * 2;
     startTime.y = -startTime.textSize / 8;
 
-    startTime.translateX = width - startTime.marginW - startTime.w / 2;
-    startTime.translateY = startTime.marginW + startTime.h / 2;
+    if (width > height) {
+        startTime.translateX = width - startTime.marginW * 2 - startTime.w / 2 - content.volumeUp.w;
+        startTime.translateY = startTime.marginW + startTime.h / 2;
+    } else {
+        startTime.translateX = startTime.marginW * 2 + startTime.w / 2 + score.w;
+        startTime.translateY = startTime.marginW + startTime.h / 2;
+    }
 }
 
 function updateScore() {
@@ -562,6 +592,17 @@ function updateScore() {
 
     score.translateX = score.marginW + score.w / 2;
     score.translateY = score.marginW + score.h / 2;
+
+
+    score.countdown.r = max(min(24, (width / 1920) * 24), 15);
+
+    score.countdown.x = width / 2;
+    score.countdown.y = score.translateY;
+    score.countdown.w = score.countdown.r * score.total + score.countdown.m * (score.total - 1);
+
+
+    if (width > height) score.countdown.translateY = score.marginW + score.h / 2;
+    else score.countdown.translateY = height - score.marginW - score.h / 2;
 }
 
 function checkButtonClick(x, y, item) {
@@ -651,6 +692,9 @@ function goBack() {
         goToObject(menuPosition, false, bootZoom);
         isSpinning = false;
         rouletteAngle = rouletteAngle % TWO_PI;
+        score.countdown.result = [];
+        score.right = 0;
+        score.wrong = 0;
     }
 }
 
@@ -670,7 +714,8 @@ function mainMenu() {
     drawButton(highscore.text, highscore.y,
         highscore.w, highscore.h,
         highscore.radius, highscore.translateX,
-        highscore.translateY, highscore.textSize);
+        highscore.translateY, highscore.textSize,
+        undefined, undefined, undefined, LEFT, highscore.marginW * 2);
 }
 
 function playMusic() {
