@@ -361,7 +361,7 @@ function updateEndGame() {
 
     //Button Continue
     endGameMenu.button.color = color("#e27146");
-    endGameMenu.button.textSize = max(min(50, (width / 1920) * 50), 35);
+    endGameMenu.button.textSize = max(min(45, (width / 1920) * 40), 20);
     endGameMenu.button.radius = max(min(50, (width / 1920) * 50), 25);
     endGameMenu.button.marginW = max(min(20, (width / 1920) * 20), 15);
     endGameMenu.button.marginH = max(min(15, (width / 1920) * 15), 10);
