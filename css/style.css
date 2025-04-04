@@ -15,7 +15,8 @@ html {
     font-style: normal;
 }
 
-#about, #start {
+#about,
+#start {
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -67,7 +68,7 @@ html {
 
 .buttonGroup {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
 }
 
@@ -86,11 +87,12 @@ button.green {
     background-color: #ADCE6F;
 }
 
-button.red  {
+button.red {
     background-color: #BC4B4B;
 }
 
-#about.hide, #start.hide {
+#about.hide,
+#start.hide {
     display: none;
 }
 
@@ -99,6 +101,7 @@ img.logoBar {
     width: 100%;
     max-width: 650px;
 }
+
 img.logo {
     min-width: 150px;
     width: 25%;
@@ -114,8 +117,22 @@ img.logo {
         margin: 12px 48px 12px 12px;
     }
 
-    .content .textContainer{
+    .content .textContainer {
         margin-top: 24px;
         max-height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .buttonList {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 24px;
+        align-items: flex-end;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
     }
 }
