@@ -780,5 +780,5 @@ function startGame() {
 }
 
 function visitSite() {
-    window.open("https://adelo.pt/", '_blank').focus();
+    window.open("http://rotasdopatrimonio.adelo.pt", '_blank').focus();
 }
