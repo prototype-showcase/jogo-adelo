@@ -180,8 +180,12 @@ function setup() { // Setup Content
 
     frameRate(30);
 
-    content.infoButton.html.querySelector(".close").addEventListener("click", displayInfo);
-    content.infoButton.html.querySelector(".close").addEventListener("touchend", displayInfo);
+    content.infoButton.html.querySelector(".close").addEventListener("click", displayHTML);
+    content.infoButton.html.querySelector(".close").addEventListener("touchend", displayHTML);
+    document.getElementById("play").addEventListener("click", startGame);
+    document.getElementById("play").addEventListener("touchend", startGame);
+    document.getElementById("visit").addEventListener("click", visitSite);
+    document.getElementById("visit").addEventListener("touchend", visitSite);
 }
 
 function loadScreen() { // Loading Screen
@@ -386,5 +390,6 @@ let startButton = {
     marginW: 0,
     marginH: 0,
     radius: 0,
-    color: 255
+    color: 255,
+    html: document.getElementById("start")
 }

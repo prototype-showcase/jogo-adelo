@@ -121,7 +121,7 @@ let menuPosition = {
     y: 4850
 };
 
-let cursorPointer = false;
+let cursorPointer = false, htmlOpen = false;
 
 let timerText;
 
@@ -158,15 +158,13 @@ function draw() {
 }
 
 function mouseRelease() {
-    if (!content.infoButton.active) {
+    if (!htmlOpen) {
         if (playStage == 0 && loadPercentage == 1 &&
             mouseX > startButton.translateX - startButton.w / 2 &&
             mouseX < startButton.translateX + startButton.w / 2 &&
             mouseY > startButton.translateY - startButton.h / 2 &&
             mouseY < startButton.translateY + startButton.h / 2) {
-            playStage = 1;
-            playMusic();
-            playSound(content.clickSound.d);
+                displayHTML(startButton);
         } else if (playStage == 1) {
             // Dificulty
             if (mouseX > classsicDifficulty.translateX - classsicDifficulty.w / 2 &&
@@ -207,7 +205,7 @@ function mouseRelease() {
 
         if (playStage > 0) {
             if (checkButtonClick(mouseX, mouseY, content.volumeUp)) playMusic();
-            else if (checkButtonClick(mouseX, mouseY, content.infoButton)) displayInfo();
+            else if (checkButtonClick(mouseX, mouseY, content.infoButton)) displayHTML(content.infoButton);
         }
     }
 }
@@ -763,9 +761,20 @@ function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
 
-function displayInfo() {
-    if (content.infoButton.active) content.infoButton.html.classList.add("hide");
-    else content.infoButton.html.classList.remove("hide");
+function displayHTML(item) { //displayInfo
+    if (htmlOpen) item.html.classList.add("hide");
+    else item.html.classList.remove("hide");
 
-    content.infoButton.active = !content.infoButton.active;
+    htmlOpen = !htmlOpen;
+}
+
+function startGame() {
+    displayHTML(startButton);
+    playStage = 1;
+    playMusic();
+    playSound(content.clickSound.d);
+}
+
+function visitSite() {
+    window.open("https://adelo.pt/", '_blank').focus();
 }

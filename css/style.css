@@ -15,7 +15,7 @@ html {
     font-style: normal;
 }
 
-#about {
+#about, #start {
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
@@ -26,7 +26,7 @@ html {
     align-items: center;
 }
 
-#about .content {
+.content {
     width: 50%;
     height: auto;
     padding: 20px;
@@ -35,14 +35,20 @@ html {
     position: relative;
 }
 
-#about .content .textContainer {
+#start .content {
+    color: white;
+    background-color: #519C51;
+    font-weight: 700;
+}
+
+.content .textContainer {
     overflow-y: auto;
     max-height: 50vh;
     min-height: 100px;
     position: relative;
 }
 
-#about .content .close {
+.content .close {
     position: absolute;
     top: 0;
     right: 0;
@@ -50,25 +56,51 @@ html {
     z-index: 10;
 }
 
-#about.hide {
+.buttonList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+#start button {
+    font-weight: 800;
+    padding: 12px 24px;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 12px;
+}
+
+#visit {
+    background-color: #ADCE6F;
+}
+
+#play {
+    background-color: #BC4B4B;
+}
+
+#about.hide, #start.hide {
     display: none;
 }
 
-.logoBar {
+img.logoBar {
     width: 100%;
+}
+img.logo {
+    width: 25%;
 }
 
 @media only screen and (max-width: 960px) {
-    #about .content {
+    .content {
         width: 100%;
         margin: 16px;
     }
 
-    #about .content .close {
+    .content .close {
         margin: 12px 48px 12px 12px;
     }
 
-    #about .content .textContainer{
+    .content .textContainer{
         margin-top: 24px;
         max-height: 80vh;
     }
