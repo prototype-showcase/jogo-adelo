@@ -84,6 +84,7 @@ html {
 }
 
 img.logoBar {
+    margin-top: 24px;
     width: 100%;
 }
 img.logo {

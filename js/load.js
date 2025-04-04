@@ -180,8 +180,8 @@ function setup() { // Setup Content
 
     frameRate(30);
 
-    content.infoButton.html.querySelector(".close").addEventListener("click", displayHTML);
-    content.infoButton.html.querySelector(".close").addEventListener("touchend", displayHTML);
+    content.infoButton.html.querySelector(".close").addEventListener("click", displayInfo);
+    content.infoButton.html.querySelector(".close").addEventListener("touchend", displayInfo);
     document.getElementById("play").addEventListener("click", startGame);
     document.getElementById("play").addEventListener("touchend", startGame);
     document.getElementById("visit").addEventListener("click", visitSite);

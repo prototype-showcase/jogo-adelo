@@ -205,7 +205,7 @@ function mouseRelease() {
 
         if (playStage > 0) {
             if (checkButtonClick(mouseX, mouseY, content.volumeUp)) playMusic();
-            else if (checkButtonClick(mouseX, mouseY, content.infoButton)) displayHTML(content.infoButton);
+            else if (checkButtonClick(mouseX, mouseY, content.infoButton)) displayInfo();
         }
     }
 }
@@ -761,7 +761,11 @@ function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
 
-function displayHTML(item) { //displayInfo
+function displayInfo() {
+    displayHTML(content.infoButton);
+}
+
+function displayHTML(item) {
     if (htmlOpen) item.html.classList.add("hide");
     else item.html.classList.remove("hide");
 
