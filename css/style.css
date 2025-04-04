@@ -59,21 +59,25 @@ html {
 
 .buttonList {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 12px;
     margin-top: 24px;
-    align-items: center;
+    align-items: flex-end;
 }
 
-#start button {
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
     font-weight: 800;
     padding: 12px 24px;
     color: white;
     text-transform: uppercase;
     border: 0;
     border-radius: 12px;
-    max-width: 80%;
     width: min-content;
     height: min-content;
 }
@@ -93,6 +97,7 @@ button.red  {
 img.logoBar {
     margin-top: 24px;
     width: 100%;
+    max-width: 650px;
 }
 img.logo {
     min-width: 150px;
