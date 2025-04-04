@@ -59,8 +59,11 @@ html {
 
 .buttonList {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px;
     margin-top: 24px;
+    align-items: center;
 }
 
 #start button {
@@ -70,13 +73,16 @@ html {
     text-transform: uppercase;
     border: 0;
     border-radius: 12px;
+    max-width: 80%;
+    width: min-content;
+    height: min-content;
 }
 
-#visit {
+button.green {
     background-color: #ADCE6F;
 }
 
-#play {
+button.red  {
     background-color: #BC4B4B;
 }
 
@@ -89,6 +95,7 @@ img.logoBar {
     width: 100%;
 }
 img.logo {
+    min-width: 150px;
     width: 25%;
 }
 

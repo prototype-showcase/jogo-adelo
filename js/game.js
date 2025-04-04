@@ -643,8 +643,8 @@ function updateButtons() {
     content.volumeUp.margin = content.backButton.margin;
     content.volumeUp.w = content.backButton.w;
     content.volumeUp.h = content.backButton.w;
-    content.volumeUp.x = content.infoButton.x - content.volumeUp.w - content.volumeUp.margin;
-    content.volumeUp.y = content.backButton.y;
+    content.volumeUp.x = content.infoButton.x;
+    content.volumeUp.y = content.backButton.y - content.volumeUp.h - content.volumeUp.margin;
 
     content.volumeMute.margin = content.volumeUp.margin;
     content.volumeMute.w = content.volumeUp.w;
@@ -780,5 +780,9 @@ function startGame() {
 }
 
 function visitSite() {
+    window.open("http://rotasdopatrimonio.adelo.pt", '_blank').focus();
+}
+
+function visitSite2() {
     window.open("http://rotasdopatrimonio.adelo.pt", '_blank').focus();
 }

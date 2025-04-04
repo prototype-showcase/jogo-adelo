@@ -454,7 +454,7 @@ function drawQuestion() {
             mouseY > questionBox.translateY + nextButton.translateY - nextButton.h / 2 &&
             mouseY < questionBox.translateY + nextButton.translateY + nextButton.h / 2) {
             cursorPointer = true;
-            
+
             translate(nextButton.translateX, nextButton.translateY);
             scale(1.05);
             translate(-nextButton.translateX, -nextButton.translateY);
@@ -496,7 +496,7 @@ async function updateQuestion() {
     // Question Text
     textFont(content.HabitasBold.d);
     questionText.color = color("#6DB671");
-    questionText.w = questionBox.w - questionBox.margin * 4;
+    questionText.w = questionBox.w - questionBox.margin * 2;
     questionText.textSize = max(min(40, (width / 1920) * 40), 20);
     questionText.textLeading = questionText.textSize * 1;
     questionText.h = getTextHeight(questionText);
@@ -683,7 +683,7 @@ async function updateQuestion() {
             maskedImage.fill(255);
             maskedImage.rect(0, 0,
                 questionText.image.maskIconW, questionText.image.maskIconH,
-                topicBox.radius*1.5);
+                topicBox.radius * 1.5);
 
             maskRatio = questionText.image.maskIconW / questionText.image.maskIconH;
 

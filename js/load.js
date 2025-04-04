@@ -186,6 +186,8 @@ function setup() { // Setup Content
     document.getElementById("play").addEventListener("touchend", startGame);
     document.getElementById("visit").addEventListener("click", visitSite);
     document.getElementById("visit").addEventListener("touchend", visitSite);
+    document.getElementById("visit2").addEventListener("click", visitSite2);
+    document.getElementById("visit2").addEventListener("touchend", visitSite2);
 }
 
 function loadScreen() { // Loading Screen
