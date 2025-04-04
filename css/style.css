@@ -39,6 +39,7 @@ html {
     color: white;
     background-color: #519C51;
     font-weight: 700;
+    max-width: 500px;
 }
 
 .content .textContainer {
