@@ -512,7 +512,7 @@ function drawTimer() {
     textLeading(startTime.textLeading);
 
     let txtColor;
-    if (remainingTime % 60 > 10) txtColor = "#589359";
+    if (getTimer() > 10) txtColor = "#589359";
     else txtColor = "#B25757";
 
     drawButton(timerText, startTime.y, startTime.w, startTime.h, startTime.radius, startTime.translateX, startTime.translateY, startTime.textSize, txtColor)

@@ -673,7 +673,7 @@ async function updateQuestion() {
             questionText.image.mask.mask(maskedImage);
 
             // Icon Masked Image
-            questionText.image.maskIconW = topicText.textLeading + topicBox.marginH * 2;
+            questionText.image.maskIconW = topicText.textLeading + topicBox.marginH * 3;
             questionText.image.maskIconH = questionText.image.maskIconW;
             questionText.image.maskIconX = questionBox.w / 2 - questionText.image.maskIconH;
             questionText.image.maskIconY = questionBox.y - questionText.image.maskIconH + topicBox.marginW;;
@@ -683,7 +683,7 @@ async function updateQuestion() {
             maskedImage.fill(255);
             maskedImage.rect(0, 0,
                 questionText.image.maskIconW, questionText.image.maskIconH,
-                topicBox.radius);
+                topicBox.radius*1.5);
 
             maskRatio = questionText.image.maskIconW / questionText.image.maskIconH;
 
