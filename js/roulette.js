@@ -67,7 +67,7 @@ function updateRoulette() {
         }
 
         if (rouletteAngle + anglePerSection / 2 - pSpinAngle >= anglePerSection) {
-            content.popSound.d.play();
+            playSound(content.popSound.d);
             pSpinAngle += anglePerSection;
         }
 

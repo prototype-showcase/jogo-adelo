@@ -41,6 +41,15 @@ let content = {
         interaction: true,
         w: 0,
         h: 0
+    }, logo: {
+        src: 'data/logo.png',
+        type: 'PNG',
+        d: null,
+        x: 0,
+        y: 0,
+        w: 0,
+        h: 0,
+        margin: 0
     }, infoButton: {
         src: 'data/infoButton.png',
         type: 'PNG',
@@ -172,6 +181,7 @@ function setup() { // Setup Content
     frameRate(30);
 
     content.infoButton.html.querySelector(".close").addEventListener("click", displayInfo);
+    content.infoButton.html.querySelector(".close").addEventListener("touchend", displayInfo);
 }
 
 function loadScreen() { // Loading Screen

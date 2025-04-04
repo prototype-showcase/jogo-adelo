@@ -53,3 +53,23 @@ html {
 #about.hide {
     display: none;
 }
+
+.logoBar {
+    width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    #about .content {
+        width: 100%;
+        margin: 16px;
+    }
+
+    #about .content .close {
+        margin: 12px 48px 12px 12px;
+    }
+
+    #about .content .textContainer{
+        margin-top: 24px;
+        max-height: 80vh;
+    }
+}

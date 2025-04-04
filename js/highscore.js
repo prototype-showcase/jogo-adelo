@@ -1,5 +1,5 @@
 let highscore = {
-    text: "RECORDE\nCLÁSSICO: 0/0\nDESAFIO: 0/0",
+    text: "RECORDE\nCLÁSSICO: 0/0\nDESAFIO: 0/0 0s",
     x: 0,
     y: 0,
     w: 0,
@@ -12,19 +12,22 @@ let highscore = {
         value: 0
     },
     challenge: {
-        value: 0
+        value: 0,
+        time: 0
     }
 };
 
-function saveHighscore(type, score) {
+function saveHighscore(type, score, time = 0) {
     if (type) { // CLASSIC MODE (true)
         if (score > highscore.classic.value) {
             highscore.classic.value = score;
             localStorage.setItem("classic_highscore", JSON.stringify(highscore.classic));
         }
     } else { // CHALLENGE MODE (false)
-        if (score > highscore.challenge.value) {
+        if (score > highscore.challenge.value || 
+            (score === highscore.challenge.value && time < highscore.challenge.time)) {
             highscore.challenge.value = score;
+            highscore.challenge.time = time;
             localStorage.setItem("challenge_highscore", JSON.stringify(highscore.challenge));
         }
     }
@@ -35,7 +38,7 @@ function getHighscore(type) {
     if (type) { // CLASSIC MODE (true)
         return JSON.parse(localStorage.getItem("classic_highscore")) || { value: 0 };
     } else { // CHALLENGE MODE (false)
-        return JSON.parse(localStorage.getItem("challenge_highscore")) || { value: 0 };
+        return JSON.parse(localStorage.getItem("challenge_highscore")) || { value: 0, time: 0 };
     }
 }
 
@@ -46,11 +49,13 @@ function updateHighscore() {
 
     highscore.classic.value = classicHighscore.value;
     highscore.challenge.value = challengeHighscore.value;
+    highscore.challenge.time = challengeHighscore.time || 0; // Ensure time exists
 
     highscore.text = 
         "RECORDE" +
         "\nCLÁSSICO: " + highscore.classic.value + "/" + score.total +
-        "\nDESAFIO: " + highscore.challenge.value + "/" + score.total;
+        "\nDESAFIO: " + highscore.challenge.value + "/" + score.total + 
+        " " + Math.round(highscore.challenge.time) + "s";
 
     highscore.textSize = Math.max(Math.min(35, (width / 1920) * 35), 20);
     highscore.radius = Math.max(Math.min(50, (width / 1920) * 50), 25);

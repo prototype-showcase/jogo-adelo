@@ -165,8 +165,8 @@ function mouseRelease() {
             mouseY > startButton.translateY - startButton.h / 2 &&
             mouseY < startButton.translateY + startButton.h / 2) {
             playStage = 1;
-            content.clickSound.d.play();
             playMusic();
+            playSound(content.clickSound.d);
         } else if (playStage == 1) {
             // Dificulty
             if (mouseX > classsicDifficulty.translateX - classsicDifficulty.w / 2 &&
@@ -174,13 +174,13 @@ function mouseRelease() {
                 mouseY > classsicDifficulty.translateY - classsicDifficulty.h / 2 &&
                 mouseY < classsicDifficulty.translateY + classsicDifficulty.h / 2) {
                 newGame(0);
-                content.clickSound.d.play();
+                playSound(content.clickSound.d);
             } else if (mouseX > challengeDifficulty.translateX - challengeDifficulty.w / 2 &&
                 mouseX < challengeDifficulty.translateX + challengeDifficulty.w / 2 &&
                 mouseY > challengeDifficulty.translateY - challengeDifficulty.h / 2 &&
                 mouseY < challengeDifficulty.translateY + challengeDifficulty.h / 2) {
                 newGame(1);
-                content.clickSound.d.play();
+                playSound(content.clickSound.d);
             }
         } else if (playStage == 2 && rouletteBlock &&
             // Spin Roulette
@@ -202,7 +202,7 @@ function mouseRelease() {
 
         if (playStage >= 2 && checkButtonClick(mouseX, mouseY, content.backButton)) {
             goBack();
-            content.clickSound.d.play();
+            playSound(content.clickSound.d);
         }
 
         if (playStage > 0) {
@@ -394,6 +394,8 @@ function newGame(dif) {
     score.right = 0;
     score.wrong = 0;
 
+    startTime.totalTime = 0;
+
     bootZoom = max(width / (tileSize * (mapCols - 2)),
         height / (tileSize * (mapRows - 2)));
 
@@ -449,7 +451,7 @@ function drawScore() {
     drawButton(score.text, score.y, score.w, score.h, score.radius, score.translateX, score.translateY, score.textSize);
 
     push();
-    translate(score.countdown.x - score.countdown.w / 2, score.countdown.translateY);
+    translate(score.countdown.x - score.countdown.w / (2 * (isMobileDevice() ? 2 : 1)), score.countdown.translateY);
     for (let i = 0; i < score.total; i++) {
         if (i < score.countdown.result.length)
             if (score.countdown.result[i]) fill(score.countdown.rColor);
@@ -458,7 +460,11 @@ function drawScore() {
         strokeWeight(2);
         stroke(score.countdown.bColor);
 
-        circle(score.countdown.r / 2 + (score.countdown.r + score.countdown.m) * i, 0, score.countdown.r);
+        let def = isMobileDevice() ? (i >= score.total/2) : 0;
+        let y = def * score.h/2 - (isMobileDevice() ? 1 : 0) * score.countdown.m;
+        let x = score.countdown.r / 2 + (score.countdown.r + score.countdown.m) * (i - def*score.total/2) ;
+        
+        circle(x, y, score.countdown.r);
     }
     pop();
 }
@@ -552,6 +558,12 @@ function updateElements() {
     updateDifficultyButtons();
     // Highscore
     updateHighscore();
+    // Logo
+    content.logo.m = max(min(20, (width / 1920) * 20), 15);
+    content.logo.h = max(min(50, (width / 1920) * 50), 25) + content.logo.m;
+    content.logo.w = content.logo.d.width * content.logo.h / content.logo.d.height;
+    content.logo.x = width - content.logo.w - content.logo.m;
+    content.logo.y = content.logo.m;
 }
 
 function updateTimer() {
@@ -567,7 +579,7 @@ function updateTimer() {
     startTime.y = -startTime.textSize / 8;
 
     if (width > height) {
-        startTime.translateX = width - startTime.marginW * 2 - startTime.w / 2 - content.volumeUp.w;
+        startTime.translateX = width - startTime.marginW - startTime.w / 2;
         startTime.translateY = startTime.marginW + startTime.h / 2;
     } else {
         startTime.translateX = startTime.marginW * 2 + startTime.w / 2 + score.w;
@@ -623,18 +635,18 @@ function updateButtons() {
     content.infoButton.y = height - content.infoButton.h / 2 - content.infoButton.margin;
 
     // Back Button
-    content.backButton.margin = max(min(20, (width / 1920) * 20), 15);
-    content.backButton.w = max(min(50, (width / 1920) * 50), 25) + content.backButton.margin;
+    content.backButton.margin = content.infoButton.margin;
+    content.backButton.w = content.infoButton.w;
     content.backButton.h = content.backButton.w;
     content.backButton.x = content.backButton.w / 2 + content.backButton.margin;
     content.backButton.y = height - content.backButton.h / 2 - content.backButton.margin;
 
     // Volume Button
-    content.volumeUp.margin = max(min(20, (width / 1920) * 20), 15);
-    content.volumeUp.w = max(min(50, (width / 1920) * 50), 25) + content.backButton.margin;
+    content.volumeUp.margin = content.backButton.margin;
+    content.volumeUp.w = content.backButton.w;
     content.volumeUp.h = content.backButton.w;
-    content.volumeUp.x = width - content.backButton.w / 2 - content.backButton.margin;
-    content.volumeUp.y = content.backButton.h / 2 + content.backButton.margin;
+    content.volumeUp.x = content.infoButton.x - content.volumeUp.w - content.volumeUp.margin;
+    content.volumeUp.y = content.backButton.y;
 
     content.volumeMute.margin = content.volumeUp.margin;
     content.volumeMute.w = content.volumeUp.w;
@@ -716,6 +728,8 @@ function mainMenu() {
         highscore.radius, highscore.translateX,
         highscore.translateY, highscore.textSize,
         undefined, undefined, undefined, LEFT, highscore.marginW * 2);
+
+    image(content.logo.d, content.logo.x, content.logo.y, content.logo.w, content.logo.h);
 }
 
 function playMusic() {
@@ -739,6 +753,10 @@ function playMusic() {
         }, duration / 100);
     }
     content.music.status = !content.music.status;
+}
+
+function playSound(sound) {
+    if(content.music.status) sound.play();
 }
 
 function isMobileDevice() {

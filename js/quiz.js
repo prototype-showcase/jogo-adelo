@@ -272,7 +272,8 @@ let startTime = {
     h: 0,
     marginW: 0,
     marginH: 0,
-    radius: 0
+    radius: 0,
+    totalTime: 0
 };
 
 let score = {
@@ -293,8 +294,8 @@ let score = {
     countdown: {
         r: 24,
         m: 6,
-        rColor: "#a0cc92",
-        wColor: "#e27146",
+        rColor: "#ADCE6F",
+        wColor: "#BC4B4B",
         dColor: "#7a8e9e",
         bColor: "#fcd191",
         result: [],
@@ -303,6 +304,20 @@ let score = {
         y: 0
     }
 }
+
+let nextButton = {
+    text: "SEGUINTE >",
+    textSize: 0,
+    textLeading: 0,
+    x: 0,
+    y: 0,
+    w: 0,
+    h: 0,
+    marginW: 0,
+    marginH: 0,
+    radius: 0,
+    color: "#BC4B4B"
+};
 
 let countdownTime = 30;
 
@@ -430,6 +445,24 @@ function drawQuestion() {
             imageMode(CENTER);
             image(questionText.image.mask, questionText.image.maskX, questionText.image.maskY, questionText.image.maskW, questionText.image.maskH);
         }
+    }
+
+    if (playStageChange) {
+        if (!isMobileDevice() &&
+            mouseX > questionBox.translateX + nextButton.translateX - nextButton.w / 2 &&
+            mouseX < questionBox.translateX + nextButton.translateX + nextButton.w / 2 &&
+            mouseY > questionBox.translateY + nextButton.translateY - nextButton.h / 2 &&
+            mouseY < questionBox.translateY + nextButton.translateY + nextButton.h / 2) {
+            cursorPointer = true;
+            
+            translate(nextButton.translateX, nextButton.translateY);
+            scale(1.05);
+            translate(-nextButton.translateX, -nextButton.translateY);
+        }
+        drawButton(nextButton.text, nextButton.y,
+            nextButton.w, nextButton.h,
+            nextButton.radius, nextButton.translateX, nextButton.translateY,
+            nextButton.textSize, "#4DA0C1", true);
     }
 
     pop();
@@ -678,6 +711,21 @@ async function updateQuestion() {
         });
     }
     updateElements();
+
+    textFont(content.HabitasBold.d);
+    // Next Button
+    nextButton.textSize = max(min(45, (width / 1920) * 40), 20);
+    nextButton.radius = max(min(50, (width / 1920) * 50), 25);
+    nextButton.marginW = max(min(30, (width / 1920) * 30), 20);
+    nextButton.marginH = max(min(15, (width / 1920) * 15), 10);
+
+    textSize(nextButton.textSize);
+    nextButton.w = textWidth(nextButton.text) + nextButton.marginW * 2;
+    nextButton.h = nextButton.textSize + nextButton.marginH * 2;
+    nextButton.y = -nextButton.h / 10;
+
+    nextButton.translateY = questionBox.y + questionBox.h + questionBox.margin / 2;
+    nextButton.translateX = 0;
 }
 
 function getTextHeight(data) {
@@ -755,6 +803,13 @@ function answerSelection() {
         mouseY < questionBox.translateY + questionText.image.maskIconY + questionText.image.maskIconH) {
         questionText.image.hide = !questionText.image.hide;
     }
+    if (playStageChange &&
+        mouseX > questionBox.translateX + nextButton.translateX - nextButton.w / 2 &&
+        mouseX < questionBox.translateX + nextButton.translateX + nextButton.w / 2 &&
+        mouseY > questionBox.translateY + nextButton.translateY - nextButton.h / 2 &&
+        mouseY < questionBox.translateY + nextButton.translateY + nextButton.h / 2) {
+        nextQuestion();
+    }
 }
 
 function setQuestion(topicId) {
@@ -794,27 +849,12 @@ function setScore(result, id) {
     else score.wrong++;
     score.countdown.result.push(result);
 
+    startTime.totalTime = startTime.totalTime + countdownTime - getTimer();
+
     selectedAnswer = id;
     answerSound(result);
     playStageChange = true;
     updateScore();
-
-    setTimeout(() => {
-        if (score.right + score.wrong >= score.total) {
-            updateEndGame();        
-            saveHighscore(difficulty == 0, score.right);
-            playStage = 4;
-            
-            score.countdown.result = [];
-        } else {
-            playStage = 2;
-            goToObject(content.roulette);
-        }
-        playStageChange = false;
-        rouletteBlock = true;
-        selectedAnswer = null;
-        clearQuestion();
-    }, 2500);
 }
 
 function clearQuestion() {
@@ -823,6 +863,23 @@ function clearQuestion() {
 }
 
 function answerSound(answer) {
-    if (answer) content.rightSound.d.play();
-    else content.wrongSound.d.play();
+    if (answer) playSound(content.rightSound.d);
+    else playSound(content.wrongSound.d);
+}
+
+function nextQuestion() {
+    if (score.right + score.wrong >= score.total) {
+        updateEndGame();
+        saveHighscore(difficulty == 0, score.right, startTime.totalTime);
+        playStage = 4;
+
+        score.countdown.result = [];
+    } else {
+        playStage = 2;
+        goToObject(content.roulette);
+    }
+    playStageChange = false;
+    rouletteBlock = true;
+    selectedAnswer = null;
+    clearQuestion();
 }
