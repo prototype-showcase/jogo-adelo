@@ -497,7 +497,7 @@ async function updateQuestion() {
     textFont(content.HabitasBold.d);
     questionText.color = color("#6DB671");
     questionText.w = questionBox.w - questionBox.margin * 4;
-    questionText.textSize = max(min(50, (width / 1920) * 50), 25);
+    questionText.textSize = max(min(40, (width / 1920) * 40), 20);
     questionText.textLeading = questionText.textSize * 1;
     questionText.h = getTextHeight(questionText);
 
