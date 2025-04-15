@@ -50,6 +50,15 @@ let content = {
         w: 0,
         h: 0,
         margin: 0
+    }, logoBar: {
+        src: 'data/logo_bar.png',
+        type: 'PNG',
+        d: null,
+        x: 0,
+        y: 0,
+        w: 0,
+        h: 0,
+        margin: 0
     }, infoButton: {
         src: 'data/infoButton.png',
         type: 'PNG',
@@ -184,10 +193,18 @@ function setup() { // Setup Content
     content.infoButton.html.querySelector(".close").addEventListener("touchend", displayInfo);
     document.getElementById("play").addEventListener("click", startGame);
     document.getElementById("play").addEventListener("touchend", startGame);
-    document.getElementById("visit").addEventListener("click", visitSite);
-    document.getElementById("visit").addEventListener("touchend", visitSite);
-    document.getElementById("visit2").addEventListener("click", visitSite2);
-    document.getElementById("visit2").addEventListener("touchend", visitSite2);
+
+    let visitButtons = document.querySelectorAll(".visit-btn");
+    visitButtons.forEach(button => {
+        let functionName = button.getAttribute("data-function");
+        if (functionName === "visitSite") {
+            button.addEventListener("click", visitSite);
+            button.addEventListener("touchend", visitSite);
+        } else if (functionName === "visitSite2") {
+            button.addEventListener("click", visitSite2);
+            button.addEventListener("touchend", visitSite2);
+        }
+    });
 }
 
 function loadScreen() { // Loading Screen
@@ -227,8 +244,17 @@ function loadScreen() { // Loading Screen
     textSize(loadingTextSize.lv3);
     text("Rotas do Património", 0, loadingTextSize.lv1 * 2 + loadingTextSize.lv2 / 2);
 
+    let posOuterBarY = loadingTextSize.lv1 * 2 + loadingTextSize.lv2 / 2 + loadingTextSize.lv3 * 2;
+
+    content.logoBar.w = min((width / 1920) * 1720, (height / 1080) * 1200, width, 920);
+    content.logoBar.h = content.logoBar.w * content.logoBar.d.height / content.logoBar.d.width;
+
+    image(content.logoBar.d,
+        - content.logoBar.w / 2, posOuterBarY + content.logoBar.h / 2 + loadOuterBar.height,
+        content.logoBar.w, content.logoBar.h)
+
     if (loadPercentage != 1) {
-        image(loadOuterBar, - loadOuterBar.width / 2, loadingTextSize.lv1 * 2 + loadingTextSize.lv2 / 2 + loadingTextSize.lv3 * 2);
+        image(loadOuterBar, - loadOuterBar.width / 2, posOuterBarY);
         image(displayInnerBar, - loadInnerBar.width / 2, loadingTextSize.lv1 * 2 + loadingTextSize.lv2 / 2 + loadingTextSize.lv3 * 2);
     }
 

@@ -50,6 +50,16 @@ html {
     position: relative;
 }
 
+.content .textContainer .text {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .textContainer .text > * {
+    margin: 0;
+}
+
 .content .close {
     position: absolute;
     top: 0;
@@ -62,7 +72,7 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 12px;
-    margin-top: 24px;
+    margin-top: 24px !important;
     align-items: flex-end;
 }
 
@@ -70,6 +80,7 @@ html {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    align-items: flex-end;
 }
 
 button {
@@ -97,9 +108,9 @@ button.red {
 }
 
 img.logoBar {
-    margin-top: 24px;
+    margin-top: 24px !important;
     width: 100%;
-    max-width: 650px;
+    max-width: 920px;
 }
 
 img.logo {
