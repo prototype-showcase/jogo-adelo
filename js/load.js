@@ -246,7 +246,7 @@ function loadScreen() { // Loading Screen
 
     let posOuterBarY = loadingTextSize.lv1 * 2 + loadingTextSize.lv2 / 2 + loadingTextSize.lv3 * 2;
 
-    content.logoBar.w = min((width / 1920) * 1720, (height / 1080) * 1200, width, 920);
+    content.logoBar.w = min((width / 1920) * 1720, (height / 1080) * 1200, width, 720);
     content.logoBar.h = content.logoBar.w * content.logoBar.d.height / content.logoBar.d.width;
 
     image(content.logoBar.d,
