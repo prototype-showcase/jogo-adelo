@@ -64,6 +64,15 @@ let endGameMenu = {
         },
         perfect: {
             text: "És imbatível! Perfeito"
+        },
+        time: {
+            text: "",
+            textSize: 0,
+            textLeading: 0,
+            x: 0,
+            y: 0,
+            w: 0,
+            h: 0
         }
     },
 
@@ -164,7 +173,7 @@ function mouseRelease() {
             mouseX < startButton.translateX + startButton.w / 2 &&
             mouseY > startButton.translateY - startButton.h / 2 &&
             mouseY < startButton.translateY + startButton.h / 2) {
-                displayHTML(startButton);
+            displayHTML(startButton);
         } else if (playStage == 1) {
             // Dificulty
             if (mouseX > classsicDifficulty.translateX - classsicDifficulty.w / 2 &&
@@ -275,6 +284,13 @@ function drawEndGame() {
     text(endGameMenu.answerBox.amount.text, endGameMenu.answerBox.amount.x, endGameMenu.answerBox.amount.y,
         endGameMenu.answerBox.amount.w);
 
+    // Timer
+    if (difficulty == 1) {
+        textSize(endGameMenu.content.time.textSize);
+        textLeading(endGameMenu.content.time.textLeading);
+        text(endGameMenu.content.time.text, endGameMenu.content.time.x, endGameMenu.content.time.y);
+    }
+
     // Message
     textAlign(LEFT, TOP);
     fill(endGameMenu.content.text.color);
@@ -379,6 +395,17 @@ function updateEndGame() {
 
     endGameMenu.translateY = (height - endGameMenu.h) / 2;
     endGameMenu.button.translateY += endGameMenu.h / 2;
+
+    // TIME
+    endGameMenu.content.time.text = Math.round(startTime.totalTime) + "s";
+    endGameMenu.content.time.w = textWidth(endGameMenu.content.time.text);
+    endGameMenu.content.time.h = getTextHeight(endGameMenu.content.time);
+
+    endGameMenu.content.time.textSize = endGameMenu.content.text.textSize;
+    endGameMenu.content.time.textLeading = endGameMenu.content.text.textLeading;
+
+    endGameMenu.content.time.x = endGameMenu.x + endGameMenu.w - endGameMenu.margin - endGameMenu.content.time.w;
+    endGameMenu.content.time.y = endGameMenu.y + endGameMenu.margin + endGameMenu.content.time.h;
 }
 
 function newGame(dif) {
@@ -458,10 +485,10 @@ function drawScore() {
         strokeWeight(2);
         stroke(score.countdown.bColor);
 
-        let def = isMobileDevice() ? (i >= score.total/2) : 0;
-        let y = def * score.h/2 - (isMobileDevice() ? 1 : 0) * score.countdown.m;
-        let x = score.countdown.r / 2 + (score.countdown.r + score.countdown.m) * (i - def*score.total/2) ;
-        
+        let def = isMobileDevice() ? (i >= score.total / 2) : 0;
+        let y = def * score.h / 2 - (isMobileDevice() ? 1 : 0) * score.countdown.m;
+        let x = score.countdown.r / 2 + (score.countdown.r + score.countdown.m) * (i - def * score.total / 2);
+
         circle(x, y, score.countdown.r);
     }
     pop();
@@ -754,7 +781,7 @@ function playMusic() {
 }
 
 function playSound(sound) {
-    if(content.music.status) sound.play();
+    if (content.music.status) sound.play();
 }
 
 function isMobileDevice() {
