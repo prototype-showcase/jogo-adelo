@@ -282,7 +282,7 @@ let score = {
     textLeading: 0,
     right: 0,
     wrong: 0,
-    total: 2,
+    total: 12,
     x: 0,
     y: 0,
     w: 0,
