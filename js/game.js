@@ -372,6 +372,23 @@ function updateEndGame() {
     endGameMenu.content.text.w = endGameMenu.w - endGameMenu.margin * 2;
     endGameMenu.content.text.h = getTextHeight(endGameMenu.content.text);
 
+    // TIME
+    endGameMenu.content.time.h = 0;
+    if (difficulty == 1) {
+        endGameMenu.content.time.text = "Tempo: " + Math.round(startTime.totalTime) + " segundos";
+        
+        endGameMenu.content.time.textSize = endGameMenu.content.text.textSize;
+        endGameMenu.content.time.textLeading = endGameMenu.content.text.textLeading;
+        textSize(endGameMenu.content.time.textSize);
+        textLeading(endGameMenu.content.time.textLeading);
+
+        endGameMenu.content.time.w = textWidth(endGameMenu.content.time.text);
+        endGameMenu.content.time.h = getTextHeight(endGameMenu.content.time);
+
+        endGameMenu.content.time.x = endGameMenu.content.text.x;
+        endGameMenu.content.time.y = endGameMenu.content.text.y + endGameMenu.content.text.h + endGameMenu.content.time.h;
+    }
+
     //Button Continue
     endGameMenu.button.color = color("#e27146");
     endGameMenu.button.textSize = max(min(45, (width / 1920) * 40), 20);
@@ -385,7 +402,7 @@ function updateEndGame() {
     endGameMenu.button.y = -endGameMenu.button.h / 10;
 
     endGameMenu.button.translateX = width / 2;
-    endGameMenu.button.translateY = endGameMenu.content.text.y + endGameMenu.content.text.h +
+    endGameMenu.button.translateY = endGameMenu.content.text.y + endGameMenu.content.text.h + endGameMenu.content.time.h +
         endGameMenu.button.h + endGameMenu.margin / 2;
 
     endGameMenu.h = endGameMenu.button.translateY - endGameMenu.y + endGameMenu.button.h / 2 + endGameMenu.margin;
@@ -394,17 +411,6 @@ function updateEndGame() {
 
     endGameMenu.translateY = (height - endGameMenu.h) / 2;
     endGameMenu.button.translateY += endGameMenu.h / 2;
-
-    // TIME
-    endGameMenu.content.time.text = Math.round(startTime.totalTime) + "s";
-    endGameMenu.content.time.w = textWidth(endGameMenu.content.time.text);
-    endGameMenu.content.time.h = getTextHeight(endGameMenu.content.time);
-
-    endGameMenu.content.time.textSize = endGameMenu.content.text.textSize;
-    endGameMenu.content.time.textLeading = endGameMenu.content.text.textLeading;
-
-    endGameMenu.content.time.x = endGameMenu.x + endGameMenu.w - endGameMenu.margin - endGameMenu.content.time.w;
-    endGameMenu.content.time.y = endGameMenu.y + endGameMenu.margin + endGameMenu.content.time.h;
 }
 
 function newGame(dif) {
