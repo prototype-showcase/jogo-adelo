@@ -146,12 +146,13 @@ function draw() {
         drawContent(); // Draw all map and assets content
     }
 
+    // Info
+    drawIcon(content.infoButton.d,
+        content.infoButton.w, content.infoButton.h,
+        content.infoButton.x, content.infoButton.y,
+        "#589359", true);
+
     if (playStage > 0) {
-        // Info
-        drawIcon(content.infoButton.d,
-            content.infoButton.w, content.infoButton.h,
-            content.infoButton.x, content.infoButton.y,
-            "#589359", true);
         // Music
         drawIcon(content.music.status ? content.volumeUp.d : content.volumeMute.d,
             content.volumeUp.w, content.volumeUp.h,
@@ -212,10 +213,8 @@ function mouseRelease() {
             playSound(content.clickSound.d);
         }
 
-        if (playStage > 0) {
-            if (checkButtonClick(mouseX, mouseY, content.volumeUp)) playMusic();
-            else if (checkButtonClick(mouseX, mouseY, content.infoButton)) displayInfo();
-        }
+        if (checkButtonClick(mouseX, mouseY, content.infoButton)) displayInfo();
+        if (playStage > 0 && checkButtonClick(mouseX, mouseY, content.volumeUp)) playMusic();
     }
 }
 
